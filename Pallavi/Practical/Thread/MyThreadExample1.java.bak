@@ -1,0 +1,10 @@
+
+	// Using Runnable Interface (Anonyomus)
+
+class  MyThreadExample1
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

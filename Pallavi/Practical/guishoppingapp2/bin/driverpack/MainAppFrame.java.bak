@@ -1,0 +1,352 @@
+package driverpack;
+import java.util.List;
+
+import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.IOException;
+
+import javax.swing.table.DefaultTableModel;
+import Source.Bill;
+import Source.Cart;
+import Source.Item;
+import Source.Stock;
+import util.CrudUtil;
+import util.FileUtil;
+import util.ListUtil;
+import gui.AddShowItemsPanel;
+import gui.AddShowStockPanel;
+import handlers.AddShowItemsPanelHandler;
+import handlers.AddShowStockPanelEventHandler;
+
+public class MainAppFrame extends JFrame implements ActionListener,WindowListener {
+	private static final long serialVersionUID = 1L;
+	public JPanel cardsPanel;
+	JPanel addShowItemsPanel;
+	JPanel addShowStcokPanel;
+	JPanel sellPanel;
+	JPanel showCartsPanel;
+    public CardLayout cardlayout;
+	TextArea ItemList;
+	JLabel message;
+	public TextField textid;
+	TextField textname;
+	TextField textprice;
+	JButton addButton, modifyButton, deleteButton;
+	JTable table1;
+	DefaultTableModel model1;
+	public AddShowStockPanel addshowstockpanel;
+	AddShowStockPanelEventHandler addshowstockpaneleventhandler;
+	AddShowItemsPanelHandler addshowitemspanelhandler;
+	public List<Item> items;
+	public List<Cart> carts;
+	public List<Stock> stocks;
+	
+	public MainAppFrame() throws ClassNotFoundException, IOException {
+        super("Main Application");
+        setSize(800, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		
+		items = FileUtil.loadItems();
+		carts = FileUtil.loadCarts();
+		stocks = FileUtil.loadStock();
+		//-------------------------------------------------------------------------
+		cardsPanel = new JPanel(); 
+		cardlayout = new CardLayout();
+		cardsPanel.setLayout(cardlayout);
+		
+		AddShowItemsPanelHandler addshowitemspanelhandler= new AddShowItemsPanelHandler(this);
+		AddShowItemsPanel addshowitemspanel = new AddShowItemsPanel(addshowitemspanelhandler);
+		//-------------------
+	/*	addShowItemsPanel = new JPanel(); 
+		addShowItemsPanel.setLayout(new GridLayout(1,2));
+
+		JPanel firstleft = new JPanel();
+		firstleft.setLayout(new GridLayout(20,1));
+
+		//ItemList = new TextArea(10, 30);
+		//firstleft.add(ItemList);
+		JPanel firstlefttop = new JPanel(new FlowLayout());
+		firstlefttop.add(new JLabel("Enter the Item ID, Name and Price"));
+		firstleft.add(firstlefttop);
+		
+		JPanel firstleftmid = new JPanel();
+		firstleftmid.setLayout(new FlowLayout());
+		textid = new TextField(10); 
+		textname = new TextField(10); 
+		textprice = new TextField(10);
+		firstleftmid.add(textid);
+		firstleftmid.add(textname);
+		firstleftmid.add(textprice);
+		firstleft.add(firstleftmid);
+		
+		JPanel firstleftbottom = new JPanel();
+		firstleftbottom.setLayout(new FlowLayout());
+		addButton = new JButton("Add");
+		modifyButton = new JButton("Modify");
+		deleteButton = new JButton("Delete");
+		addButton.addActionListener(this);
+		modifyButton.addActionListener(this);
+		deleteButton.addActionListener(this);
+		firstleftbottom.add(addButton);
+		firstleftbottom.add(modifyButton);
+		firstleftbottom.add(deleteButton);
+		modifyButton.setEnabled(false);
+		deleteButton.setEnabled(false);
+		firstleft.add(firstleftbottom);
+
+		addShowItemsPanel.add(firstleft);
+		//--
+		String[] columnNames = {"ID", "Name", "Price"};
+        Object[][] data = {};
+		model1 = new DefaultTableModel(data, columnNames);
+        table1 = new JTable(model1);
+		addShowItemsPanel.add(new JScrollPane(table1));
+		table1.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent event) {
+                if (!event.getValueIsAdjusting()) {
+                    int selectedRow = table1.getSelectedRow();
+                    if (selectedRow != -1) {
+                        int id = (int) table1.getValueAt(selectedRow, 0);
+                        String name = (String) table1.getValueAt(selectedRow, 1);
+                        double price = (double) table1.getValueAt(selectedRow, 2);
+                        //System.out.println("Selected Row: ID = " + id + ", Name = " + name + ", Price = " + price);
+                        textid.setText(""+id);
+                        textid.setEditable(false);
+                        textname.setText(name);
+                        textprice.setText(""+price);                        
+
+                		addButton.setEnabled(false);
+                		modifyButton.setEnabled(true);
+                		deleteButton.setEnabled(true); 
+                    }
+                }
+            }  
+        });
+	*/
+		//===========================================================================================
+		
+		//===========================================================================================
+		addshowstockpaneleventhandler = new AddShowStockPanelEventHandler(this);
+		addshowstockpanel = new AddShowStockPanel(addshowstockpaneleventhandler); 
+		//addShowStcokPanel.setBackground(Color.RED);
+		//===========================================================================================
+		sellPanel = new JPanel(); 
+		sellPanel.setBackground(Color.GREEN);
+		//===========================================================================================
+		showCartsPanel = new JPanel();
+		showCartsPanel.setBackground(Color.BLUE);
+		//===========================================================================================
+		cardsPanel.add(new JPanel().add(new JLabel("Shopping Application")),"appMain");
+		cardsPanel.add(addshowitemspanel,"addshowitemspanel");
+		cardsPanel.add(addshowstockpanel,"addshowstockpanel");
+		cardsPanel.add(sellPanel,"sellPanel");
+		cardsPanel.add(showCartsPanel,"showCartsPanel");
+		add(cardsPanel, BorderLayout.CENTER);
+		//===========================================================================================
+		// Create and add menubar to frame
+		// Create the menu bar
+        JMenuBar menuBar = new JMenuBar();
+
+        // Create the "File" menu
+        JMenu fileMenu = new JMenu("File");
+
+        // Create menu items for the "File" menu
+        JMenuItem asItem = new JMenuItem("Add-Show Items");
+        JMenuItem asstock = new JMenuItem("Add-Show Stocks");
+        JMenuItem sellItem = new JMenuItem("Sell");
+        JMenuItem sacarts = new JMenuItem("Show All Carts");
+        JMenuItem exitItem = new JMenuItem("Exit");
+
+        // Add menu items to the "File" menu
+        fileMenu.add(asItem);
+        fileMenu.add(asstock);
+        fileMenu.add(sellItem);
+        fileMenu.add(sacarts);
+        fileMenu.addSeparator();  // Add a separator line
+        fileMenu.add(exitItem);
+
+        // Add the "File" menu to the menu bar
+        menuBar.add(fileMenu);
+
+        // Create the "Edit" menu
+        JMenu helpMenu = new JMenu("Edit");
+
+        // Create menu items for the "Edit" menu
+        JMenuItem producthelp = new JMenuItem("Product Help");
+        JMenuItem Apphelp = new JMenuItem("Application Help");
+
+        // Add menu items to the "Edit" menu
+        helpMenu.add(producthelp);
+        helpMenu.add(Apphelp);
+
+        // Add the "Edit" menu to the menu bar
+        menuBar.add(helpMenu);
+
+        // Set the menu bar for the frame
+        setJMenuBar(menuBar);
+
+        // Add event listeners for the menu items
+        asItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+				cardlayout.show(cardsPanel, "addshowitemspanel");
+				CrudUtil.readItems(model1, items);
+				 
+				 //cardlayout.next(cardsPanel);
+                JOptionPane.showMessageDialog(MainAppFrame.this, "New menu item clicked");
+            }
+        });
+        
+        asstock.addActionListener(addshowstockpaneleventhandler);
+
+      /*  asstock.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+				cardlayout.show(cardsPanel, "addshowstockpanel");
+                JOptionPane.showMessageDialog(MainAppFrame.this, "Open menu item clicked");
+            }
+        });*/
+
+        sellItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(MainAppFrame.this, "Save menu item clicked");
+            }
+        });
+	
+		sacarts.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(MainAppFrame.this, "Save menu item clicked");
+            }
+        });
+        exitItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	try {
+					FileUtil.saveItems(items);
+					FileUtil.saveStock(stocks);
+					FileUtil.saveCarts(carts);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+                System.exit(0);
+            }
+        });
+
+        producthelp.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(MainAppFrame.this, "Product item clicked");
+            }
+        });
+
+        Apphelp.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(MainAppFrame.this, "Appication Help item clicked");
+            }
+        });
+    }
+	@Override
+    public void actionPerformed(ActionEvent e) {
+        String command = e.getActionCommand();
+        if (command.equals("Add")) {
+            
+           //model1.addRow(new Object[]{field1, field2, field3});
+            int id = Integer.parseInt(textid.getText());
+            String name = textname.getText();
+            double price = Double.parseDouble(textprice.getText());
+                       
+            textid.setText("");
+            textname.setText("");
+            textprice.setText("");
+            Item item = new Item(id, name, price);
+            CrudUtil.createItem(model1, item, items);
+            ListUtil.addOrUpdateStock(id, 0, stocks);
+        } else if (command.equals("Modify")) {
+        	int id = Integer.parseInt(textid.getText());
+            String name = textname.getText();
+            double price = Double.parseDouble(textprice.getText());
+                       
+            textid.setText("");
+            textname.setText("");
+            textprice.setText("");
+            Item item = new Item(id, name, price);
+        	CrudUtil.updateItem(item, items);
+            CrudUtil.readItems(model1, items);
+        
+            textid.setEditable(true);                  
+    		addButton.setEnabled(true);
+    		modifyButton.setEnabled(false);
+    		deleteButton.setEnabled(false);
+    		
+            JOptionPane.showMessageDialog(MainAppFrame.this, "Record Modified Sucessfully");
+        	
+        }else if (command.equals("Delete")) {
+        	JOptionPane.showMessageDialog(MainAppFrame.this, "Record Deleted Sucessfully");
+        	int id = Integer.parseInt(textid.getText());
+            
+            textid.setText("");
+            textname.setText("");
+            textprice.setText("");
+            
+            textid.setEditable(true);                  
+    		addButton.setEnabled(true);
+    		modifyButton.setEnabled(false);
+    		deleteButton.setEnabled(false);
+    		
+        	CrudUtil.deleteItem(id, items);
+            CrudUtil.readItems(model1, items);
+        }
+    }
+    public static void main(String[] args) throws ClassNotFoundException, IOException {
+        // This is where the main application starts
+        MainAppFrame app = new MainAppFrame();
+
+        app.setVisible(true);
+    }
+	@Override
+	public void windowOpened(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
+		try {
+			FileUtil.saveItems(items);
+			FileUtil.saveStock(stocks);
+			FileUtil.saveCarts(carts);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
+	@Override
+	public void windowClosed(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowIconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowActivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}

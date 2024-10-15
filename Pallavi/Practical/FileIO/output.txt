@@ -1,0 +1,2 @@
+Writing to file: 
+Formatted number: 100

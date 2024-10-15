@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class MyArray
+{
+	private int x[];
+	private int cnt;
+
+	public void input()
+	{
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter cnt: ");
+		cnt = sc.nextInt();
+		x = new int[cnt];
+
+		for(int i=0;i<5;i++)
+		{
+			x[i]=sc.nextInt();
+		}
+	}
+
+	public void display()
+	{
+		System.out.println("Array elements are: ");
+
+		for(int i=0;i<x.length;i++)
+		{
+			System.out.println("  "+x[i]);
+		}
+	}
+}
+class NestedTryCatchExample 
+{
+	public static void main(String[] args) 
+	{
+		MyArray ob = new MyArray();
+		ob.input();
+		ob.display();
+	}
+}
