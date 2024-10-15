@@ -1,0 +1,9 @@
+class ObjectDemo 
+{
+	public static void main(String[] args) 
+	{
+		Object ob = new Object();
+		System.out.println("Ob prints: "+ob);
+		System.out.println("Ob prints: "+ob.toString());
+	}
+}

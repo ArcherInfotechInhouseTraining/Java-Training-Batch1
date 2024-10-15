@@ -1,0 +1,91 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.management.openmbean.OpenDataException;
+
+class MyFrame8 extends Frame implements ActionListener
+{
+    public MyFrame8()
+    {
+        super("Menu Window");
+        setSize(400, 300);
+
+        MenuBar menuBar = new MenuBar();
+
+        Menu fileMenu = new Menu("file");
+        Menu editMenu = new Menu("Edit");
+
+
+        MenuItem openItem = new MenuItem("open");
+        MenuItem saveItem = new MenuItem("save");
+        MenuItem exitItem = new MenuItem("exit");
+
+        MenuItem cutItem = new MenuItem("cut");
+        MenuItem copyItem = new MenuItem("copy");
+        MenuItem pasteItem = new MenuItem("paste");
+
+        openItem.addActionListener(this);
+        saveItem.addActionListener(this);
+        exitItem.addActionListener(this);
+        cutItem.addActionListener(this);
+        copyItem.addActionListener(this);
+        pasteItem.addActionListener(this);
+
+        fileMenu.add(openItem);
+        fileMenu.add(saveItem);
+        fileMenu.addSeparator();
+        fileMenu.add(exitItem);
+
+        editMenu.add(cutItem);
+        editMenu.add(copyItem);
+        editMenu.add(pasteItem);
+
+        menuBar.add(fileMenu);
+        menuBar.add(editMenu);
+
+        setMenuBar(menuBar);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        String command = e.getActionCommand();
+
+        if(command.equals("Open"))
+        {
+            System.out.println("Open selected");
+        }
+        else if(command.equals("Save"))
+        {
+            System.out.println("Save selected");
+        }
+        else if(command.equals("exit"))
+        {
+            System.exit(0);
+        }
+		else if(command.equals("Paste"));
+        {
+            System.out.println("Paste selected");
+        }
+        else if(command.equals("Copy"))
+        {
+            System.out.println("Copy selected");
+        }
+		
+        else if(command.equals("Cut"))
+        {
+            System.out.println("Cut selected");
+        }
+		else
+		{
+			System.out.println("Invalid");
+		}
+        
+    }
+}
+public class MenuExample {
+    public static void main(String[] args) {
+        MyFrame8 mf = new MyFrame8();
+        mf.setVisible(true);
+    }
+}
