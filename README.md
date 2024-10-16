@@ -24,7 +24,7 @@
 ## Introduction
 - This project is designed to demonstrate various Java programming concepts through practical exercises. Each topic includes example programs that illustrate key concepts, making it ideal for beginners as well as intermediate Java developers looking to strengthen their understanding of Java.
 
-### Topics Covered
+## Topics Covered
 ### Basic Java Concepts
 - Loops and Control Structures: Practicals on for, while, and do-while loops, as well as if, switch, and other control structures.
 - Data Types: Explanation and examples of primitive data types (int, double, char, etc.) and reference data types in Java.
