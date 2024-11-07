@@ -1,0 +1,80 @@
+1. What is a servlet in Java, and how does it work in a web application?
+	Answer: A servlet is a Java class that extends the capabilities of servers that host web applications. 
+	It is primarily used to process HTTP requests and generate dynamic web content, typically in HTML. Servlets run on a 
+	servlet container (like Apache Tomcat) and handle incoming client requests, process them (e.g., access a database), and generate a response (like HTML, JSON, etc.).
+
+2. Why do we use servlets instead of CGI (Common Gateway Interface)?
+
+Answer: Servlets are preferred over CGI because:
+
+Efficiency : 		CGI creates a new process for each request, whereas servlets handle requests within a single process using multiple threads.
+Performance: 		Since servlets use threads, they consume fewer resources compared to CGI, leading to better performance.
+Scalability: 		Servlets can handle multiple requests simultaneously using a thread pool, making them more scalable than CGI.
+Platform Independence: 	Servlets are written in Java, making them platform-independent.
+
+
+3. What are the main advantages of using servlets in Java web applications?
+
+Answer:
+
+Platform-independent: Servlets are written in Java and can run on any platform that supports Java.
+Efficient and Scalable: Servlets use a multithreaded approach, which is more efficient than creating new processes for each request, as seen in CGI.
+Integration with Java EE: Servlets can easily interact with other Java EE components like JSPs, databases (via JDBC), and Enterprise JavaBeans (EJB).
+Security: Servlet containers often provide built-in security features like authentication, authorization, and secure session management.
+
+4. How do servlets handle multi-threading, and why is it important?
+
+Answer: Servlets are inherently multi-threaded. When a request is received, the servlet container creates a new thread to handle the request by invoking
+ methods like doGet() or doPost(). Multi-threading is important because it allows the servlet to handle multiple concurrent client requests without creating a new instance or process for each request, 
+which improves efficiency and performance.
+
+5. What is the difference between a generic servlet and an HTTP servlet?
+
+Answer: A GenericServlet is protocol-independent and can handle any type of request (such as FTP or SMTP), while an HttpServlet is specifically designed to handle HTTP requests.
+Most web applications use HttpServlet, as it simplifies working with HTTP methods like GET, POST, PUT, DELETE, etc.
+
+6. How many objects of a servlet is created?
+Only one object at the time of first request by servlet or web container.
+
+7. What is the life-cycle of a servlet?
+Servlet is loaded
+servlet is instantiated
+servlet is initialized
+service the request
+servlet is destroyed
+
+8. What are the life-cycle methods for a servlet?
+======================================================================================================================================================================================================================
+Method											Description
+======================================================================================================================================================================================================================
+public void init(ServletConfig config)    								It is invoked only once when first request comes for the servlet. It is used to initialize the servlet.
+
+public void service(ServletRequest request,ServletResponse)throws ServletException,IOException	It is invoked at each request.The service() method is used to service the request.
+
+public void destroy()									It is invoked only once when servlet is unloaded.
+
+=====================================================================================================================================================================================================================
+
+9. Who is responsible to create the object of servlet?
+ANS : The web container or servlet container.
+
+10. When servlet object is created?
+At the time of first request.
+
+
+11. What is difference between Get and Post method?
+===================================================================================================================================================================================================================
+Get										Post
+===================================================================================================================================================================================================================
+1) Limited amount of data can be sent because data is sent in header.			Large amount of data can be sent because data is sent in body.
+
+2) Not Secured because data is exposed in URL bar.					Secured because data is not exposed in URL bar.
+
+3) Can be bookmarked								Cannot be bookmarked
+
+4) Idempotent									Non-Idempotent
+
+5) It is more efficient and used than Post						It is less efficient and used
+
+===========================================================================================================================================================================================================
+
