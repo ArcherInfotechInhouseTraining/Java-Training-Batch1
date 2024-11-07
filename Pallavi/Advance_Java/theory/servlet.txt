@@ -1,0 +1,136 @@
+ChatGPT Search  links 
+	:https://chatgpt.com/share/6718ea65-d978-8003-9f7a-fbf26141baff
+
+1. What is a servlet in Java, and how does it work in a web application?
+	Answer: A servlet is a Java class that extends the capabilities of servers that host web applications. 
+	It is primarily used to process HTTP requests and generate dynamic web content, typically in HTML. Servlets run on a 
+	servlet container (like Apache Tomcat) and handle incoming client requests, process them (e.g., access a database), and generate a response (like HTML, JSON, etc.).
+
+2. Why do we use servlets instead of CGI (Common Gateway Interface)?
+
+Answer: Servlets are preferred over CGI because:
+
+Efficiency : 		CGI creates a new process for each request, whereas servlets handle requests within a single process using multiple threads.
+Performance: 		Since servlets use threads, they consume fewer resources compared to CGI, leading to better performance.
+Scalability: 		Servlets can handle multiple requests simultaneously using a thread pool, making them more scalable than CGI.
+Platform Independence: 	Servlets are written in Java, making them platform-independent.
+
+
+3. What are the main advantages of using servlets in Java web applications?
+
+Answer:
+
+Platform-independent: Servlets are written in Java and can run on any platform that supports Java.
+Efficient and Scalable: Servlets use a multithreaded approach, which is more efficient than creating new processes for each request, as seen in CGI.
+Integration with Java EE: Servlets can easily interact with other Java EE components like JSPs, databases (via JDBC), and Enterprise JavaBeans (EJB).
+Security: Servlet containers often provide built-in security features like authentication, authorization, and secure session management.
+
+4. How do servlets handle multi-threading, and why is it important?
+
+Answer: Servlets are inherently multi-threaded. When a request is received, the servlet container creates a new thread to handle the request by invoking
+ methods like doGet() or doPost(). Multi-threading is important because it allows the servlet to handle multiple concurrent client requests without creating a new instance or process for each request, 
+which improves efficiency and performance.
+
+5. What is the difference between a generic servlet and an HTTP servlet?
+
+Answer: A GenericServlet is protocol-independent and can handle any type of request (such as FTP or SMTP), while an HttpServlet is specifically designed to handle HTTP requests.
+Most web applications use HttpServlet, as it simplifies working with HTTP methods like GET, POST, PUT, DELETE, etc.
+
+6. How many objects of a servlet is created?
+Only one object at the time of first request by servlet or web container.
+
+7. What is the life-cycle of a servlet?
+Servlet is loaded
+servlet is instantiated
+servlet is initialized
+service the request
+servlet is destroyed
+
+8. What are the life-cycle methods for a servlet?
+======================================================================================================================================================================================================================
+Method											Description
+======================================================================================================================================================================================================================
+public void init(ServletConfig config)    								It is invoked only once when first request comes for the servlet. It is used to initialize the servlet.
+
+public void service(ServletRequest request,ServletResponse)throws ServletException,IOException	It is invoked at each request.The service() method is used to service the request.
+
+public void destroy()									It is invoked only once when servlet is unloaded.
+
+=====================================================================================================================================================================================================================
+
+9. Who is responsible to create the object of servlet?
+ANS : The web container or servlet container.
+
+10. When servlet object is created?
+At the time of first request.
+
+
+11. What is difference between Get and Post method?
+===================================================================================================================================================================================================================
+Get										Post
+===================================================================================================================================================================================================================
+1) Limited amount of data can be sent because data is sent in header.			Large amount of data can be sent because data is sent in body.
+
+2) Not Secured because data is exposed in URL bar.					Secured because data is not exposed in URL bar.
+
+3) Can be bookmarked								Cannot be bookmarked
+
+4) Idempotent									Non-Idempotent
+
+5) It is more efficient and used than Post						It is less efficient and used
+
+===========================================================================================================================================================================================================
+
+12. What are Servlets?
+
+	A Servlet is a Java-based server-side component that processes client requests and generates dynamic responses in a web application.
+	and are used to handle requests and generate responses in a web application.
+
+	Key Concepts of Servlets
+
+	1. Request and Response Model:
+		Servlets operate using a request-response model. When a client (usually a web browser) sends a request to a 
+		web server (such as Apache Tomcat), the server forwards this request to the appropriate servlet. The servlet 
+		processes the request and returns a response to the client.
+		
+	2. Life Cycle of a Servlet: 
+	The lifecycle of a servlet is managed by the servlet container (e.g., Tomcat). The lifecycle consists of the following phases:
+
+	- Loading: The servlet class is loaded into memory by the servlet container when it is first requested.
+	- Instantiation: The servlet container creates an instance of the servlet.
+	- Initialization: The init() method is called once to initialize the servlet. This method is typically used for resource allocation or configuration.
+
+	- Request Handling: For each request, the servlet container creates a separate thread and invokes the service() method, passing the request and 
+			  response objects. This method handles the request processing.
+	- Destruction: When the servlet is no longer needed, the destroy() method is called to release resources and perform cleanup.
+
+	3. HTTP Methods: Servlets can handle various HTTP methods, with the most common being:
+
+	- GET: Used to retrieve data from the server (e.g., loading a webpage).
+	- POST: Used to submit data to the server (e.g., submitting a form).
+	- PUT: Used to update existing data on the server.
+	- DELETE: Used to delete data on the server.
+
+	You typically override the doGet() and doPost() methods in a servlet to handle GET and POST requests, respectively.
+
+	4. Servlet API: The Servlet API provides several classes and interfaces that developers use to create servlets:
+
+	- HttpServlet: A subclass of the GenericServlet class that provides methods specifically for handling HTTP requests and responses.
+	- HttpServletRequest: An object that represents the client's request, allowing access to request parameters, headers, and other information.
+	- HttpServletResponse: An object used to construct the response sent back to the client. This object allows setting response content type,
+			      status codes, and writing data to the output stream.
+
+	Advantages of Using Servlets : -
+	
+	- Efficiency: Servlets are more efficient than CGI (Common Gateway Interface) as they are multithreaded, allowing multiple requests 
+		    to be handled simultaneously by the same servlet instance.
+
+	- Integration with Java: Being written in Java, servlets can easily access Java libraries and frameworks, enabling the development of 
+			complex applications.
+
+	- Robustness: The Java platform provides built-in exception handling and security features, making servlets robust for enterprise
+		     applications.
+
+13. What is a servlet container?
+
+
