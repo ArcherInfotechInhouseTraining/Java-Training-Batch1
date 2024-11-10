@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Enter The Data</title>
+		<style>
+			h2{
+				text-align: center;
+			}
+			form{
+				text-align: center;
+				background-color: #B0C4DE;
+				height: 500px;
+				width: 500px;
+				margin-left: 25%;
+				border: 1px solid black;
+				border-radius: 20px;
+				padding: 40px;
+			}
+			input{
+				border: 1px solid black;
+				border-radius: 20px;
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Enter the data and submit</h2>
+		<form action="FormServlet" method="post">
+			<label  for="name">Name: </label>
+			<input type="text" id="name" name="name"><br><br>
+			
+			<label for="email">Email: </label>
+			<input type="email" id="email" name="email"><br><br>
+			
+			<label for="password">Password: </label>
+			<input type="password" id="password" name="password"><br><br>
+			
+			<!--Radio Buttons -->
+			<label>Gender: </label>
+			<input type="radio" name="gender" value="Male">
+			<label>Male</label>
+			<input type="radio" name="gender" value="Female">
+			<label>Female</label><br><br>
+			
+			<!-- Checkboxes -->
+			<label>Skills:</label>
+			<input type="checkbox" name="skill" value="Python">
+			<label>Python</label>
+			<input type="checkbox" name="skill" value="Java">
+			<label>Java</label>
+			<input type="checkbox" name="skill" value="CPP">
+			<label>CPP</label><br><br>
+			
+			<!-- Drop-down (Select) Lists -->
+			
+				<!-- (Single Select Drop-down) -->
+				<label>Country</label>
+				<select id="country" name="country">
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+					<option value="Canada">Canada</option>
+				</select><br><br>
+				
+				<!-- Multiple Select Drop-down -->
+				<label for="languages">Languages:</label>
+				<select id="languages" name="languages">
+					<option value="Java">Java</option>
+					<option value="Python">Python</option>
+					<option value="Cpp">Cpp</option>
+					<option value="C">C</option>
+				</select><br><br>
+				
+				<!-- Hidden Fields -->
+				<input type="hidden" name="userId" value="1234"><br>
+				
+				<!-- Text Area -->
+				<label for="comments">Comments:</label>
+				<textarea  id="comments" name="comments"></textarea><br><br>
+				
+				<!-- Date Input -->
+				<label for="dob">Data Of Birth</label>
+				<input type="date" id="dob" name="dob"><br><br>
+			
+			<input type="submit" value="submit">
+		</form>
+	
+	</body>
+</html>
