@@ -1,0 +1,11 @@
+<web-app>
+	<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/load</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<servlet-class>arc.nov.examples.WelcomeServlet</servlet-class>
+	</servlet>
+</web-app>
