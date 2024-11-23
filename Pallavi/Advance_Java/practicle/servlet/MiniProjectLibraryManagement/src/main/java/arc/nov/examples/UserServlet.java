@@ -15,9 +15,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class UserServlet
- */
+
+
+
 @WebServlet("/UserServlet")
 public class UserServlet extends HttpServlet {
 	
@@ -54,19 +54,21 @@ public class UserServlet extends HttpServlet {
 
 		out.println("<!Doctype html>");
 		out.println("<html>");
-		out.println("<head> <title>New User Registration</title> </head>");
+		out.println("<head> <title>New User Registration</title>");
+		out.println("<link rel='stylesheet' type='text/css' href='css/style.css'>");
+		out.println("</head>");
 
 		out.println("<body>");
 		
 		//display users
-		out.println("<h1>All Users Details</h1>");
+		out.println("<h1 class='table-heading'>All Users Details</h1>");
 		try {
 
 			java.sql.Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
 			out.println("<table border='1'>");
-			out.println("<tr> <th>Id</th> <th>Name</th> <th>Email</th> <th>Contact</th></tr>");
+			out.println("<tr> <th>Id</th> <th>Name</th> <th>Email</th> <th>Contact</th> <th>Deposite</th></tr>");
 
 			while (rs.next()) {
 				out.println("<tr>");
@@ -74,6 +76,7 @@ public class UserServlet extends HttpServlet {
 				out.println("<td>" + rs.getString("name") + "</td>");
 				out.println("<td>" + rs.getString("email") + "</td>");
 				out.println("<td>" + rs.getString("contact") + "</td>");
+				out.println("<td>" + rs.getString(5) + "</td>");
 				out.println("</tr>");
 			}
 			out.println("</table><br><br><br>");
@@ -82,17 +85,21 @@ public class UserServlet extends HttpServlet {
 		}
 		
 		// enter new user
-		out.println("<h1>Add new User Details</h1>");
+		out.println("<h1 class='table-heading'>Add new User Details</h1>");
 		out.println("<form action='UserServlet' method='post'>");
-		out.println("Name: <input type='text' name='name' placeholder='Enter User Name'><br><br>");
-		out.println("Email: <input type='email' name='email' placeholder='Enter User Email'><br><br>");
-		out.println("Contact: <input type='text' name='contact' placeholder='Enter User Contact'><br><br>");
+		out.println("<label>Name:</label> ");
+		out.println("<input type='text' name='name' placeholder='Enter User Name'><br><br>");
+		out.println("<label>Email: </label> ");
+		out.println("<input type='email' name='email' placeholder='Enter User Email'><br><br>");
+		out.println("<label>Contact: </label> ");
+		out.println("<input type='text' name='contact' placeholder='Enter User Contact'><br><br>");
 		out.println("<input type='submit' value='Add User'><br><br>");
-		out.println("<form>");
+		out.println("</form>");
 		
-		out.println("<a href='BookServlet'>Back To Home</a>");
+		out.println("<a href='BookServlet' class='btn btn-primary'>Back To Home</a>");
 		
 		out.println("</body>");
+		
 		out.println("</html>");
 		
 	}
@@ -134,12 +141,10 @@ public class UserServlet extends HttpServlet {
 			pstmt.executeUpdate();
 //			pstmt.executeQuery();
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		response.sendRedirect("UserServlet");
-
 		out.println("</body>");
 		out.println("</html>");
 		
