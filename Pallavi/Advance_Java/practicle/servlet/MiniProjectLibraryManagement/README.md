@@ -119,3 +119,12 @@ This project is licensed under the [MIT License](LICENSE).
 
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.
 
+## Output Screenshot
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagement/src/main/webapp/bookimages/c.JPG">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagement/src/main/webapp/bookimages/cpp.JPG">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagement/src/main/webapp/bookimages/java.JPG">
+
+<img src="">
+
