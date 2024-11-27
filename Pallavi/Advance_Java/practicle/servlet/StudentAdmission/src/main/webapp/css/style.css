@@ -1,0 +1,110 @@
+body {
+    
+     background: url('../images/bg1.jpg') no-repeat center center fixed;  
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height for the body */
+    overflow-y: scroll; /* Ensure scroll functionality */
+}
+
+/* Hide the scrollbar for all browsers without losing functionality */
+body::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width for Webkit browsers */
+}
+
+body {
+    scrollbar-width: none; /* Remove scrollbar for Firefox */
+    -ms-overflow-style: none; /* Remove scrollbar for Internet Explorer and Edge */
+}
+
+/* Form container styling */
+form {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden; /* Ensure no scrollbars appear within the form */
+    
+}
+
+/* Table styling */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border:24px;
+    background-color: white;
+    opacity: 0.8;
+    backdrop-filter: blur(0.2px);
+}
+
+form table th, form table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+form table th {
+    background-color: #007bff;
+    color: black;
+    font-weight: bold;
+}
+
+form table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form table td a:hover {
+    text-decoration: underline;
+}
+
+/* Submit button styling */
+form button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    
+}
+h3,h1,h2{
+	color: black;
+	text-align: center;
+}
+
+.row .col-md-6{
+	width: 50%;
+	
+}
+
+input {
+	color: black;
+}
+label {
+	color: black;
+}
+
+
