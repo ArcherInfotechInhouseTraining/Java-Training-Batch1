@@ -1,0 +1,14 @@
+class DemoObject 
+{
+	public void show()
+	{
+		System.out.println("In show()");
+	}
+}
+class Anonymous
+{
+	public static void main(String [])
+	{
+		new DemoObject().show();
+	}
+}
