@@ -1,0 +1,204 @@
+@charset "ISO-8859-1";
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Choose a clean and readable font */
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #333; /* Dark gray for text color */
+    text-align: center; /* Center the heading */
+    margin-top: 30px; /* Add space above the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+
+/* Center the form */
+form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Input field focus */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        
+/* Center the container that holds the buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-wrap: wrap;         /* Allow buttons to wrap if the screen is too small */
+    height: 100vh;           /* Full viewport height to vertically center */
+}
+
+/* General button style */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Home button */
+.button.home {
+    background-color: #28a745; /* Green */
+}
+
+.button.home:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Create button */
+.button.create {
+    background-color: #007bff; /* Blue */
+}
+
+.button.create:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Read button */
+.button.read {
+    background-color: #ffc107; /* Yellow */
+}
+
+.button.read:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+/* Update button */
+.button.update {
+    background-color: #17a2b8; /* Teal */
+}
+
+.button.update:hover {
+    background-color: #138496; /* Darker teal */
+}
+
+/* Delete button */
+.button.delete {
+    background-color: #dc3545; /* Red */
+}
+
+.button.delete:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* Option styling */
+option {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Add spacing for the form */
+form br {
+    margin-bottom: 10px;
+}
