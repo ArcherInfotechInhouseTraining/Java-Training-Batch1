@@ -1,0 +1,3769 @@
+
+	----------------- HTML ---------------
+
+	Introduction to client-Server architecture and web Application:
+
+	Client-Server Architecture: 
+
+	Client-server architecture is a computing model that divides tasks or workloads between 
+	service providers (servers) and service requesters (clients). This structure forms the 
+	backbone of web applications and the internet as a whole.
+
+	Key Components
+
+	Client: The client is the device or software that requests services or resources from the 
+		server. Examples include web browsers, mobile apps, and desktop applications.
+
+		Characteristics:
+		- Initiates requests to the server.
+		- Waits for and processes responses from the server.
+		- Typically has a user interface for interaction.
+
+	Server: The server is the system or application that provides services, resources, or data to 
+		clients. It listens for incoming requests and responds appropriately.
+
+		Characteristics:
+		- Waits for requests from clients.
+		- Processes incoming requests and sends back responses.
+		- Can handle multiple client requests simultaneously.
+
+	How It Works
+
+	- Request: The client sends a request to the server. This could be a request for a web page, 
+		   data, or other resources.
+
+	- Processing: The server processes the client's request. This might involve fetching data from 
+		   a database, executing a script, or performing some computation.
+
+	- Response: The server sends a response back to the client. This could be an HTML page, JSON
+		   data, or other resources.
+
+	- Examples
+		- Web Browsing: When you enter a URL in a web browser (client), it sends an HTTP 
+		  request to the web server. The server processes the request and returns the 
+		  requested web page.
+		- Email: An email client (like Outlook) connects to an email server to send and
+		  receive messages.
+
+	//-----------------------------------------------------------------------------------
+
+	Web Application
+
+	A web application is a software application that runs on a web server, as opposed to being 
+	installed on the local computer. Users interact with web applications through a web browser 
+	over the internet or an intranet.
+
+	Key Components
+	- Front-End (Client-Side): The part of the web application that users interact with directly. 	  	  	  
+	It includes:
+		- HTML: Defines the structure of web pages.
+		- CSS: Styles the web pages.
+		- JavaScript: Adds interactivity to web pages.
+
+	- Back-End (Server-Side): The part of the web application that processes requests, manages 
+				  databases, and performs business logic. It includes:
+
+		- Server: Runs the application and handles client requests.
+		- Database: Stores and manages data.
+		- Server-Side Programming Languages: Such as Python, PHP, Java, Ruby, and Node.js.
+		- APIs (Application Programming Interfaces): Interfaces that allow different software
+		  components to communicate with each other. Web applications often use RESTful APIs 
+		  to communicate between the client and server.
+
+	How Web Applications Work
+	- User Interaction: The user interacts with the front-end of the web application through a 
+	  web browser.
+	- Request: The front-end sends an HTTP request to the back-end server.
+	- Processing: The server processes the request, which may involve querying a database, 
+	  executing some business logic, or calling external APIs.
+	- Response: The server sends back a response to the front-end, which is then displayed to 
+		    the user.
+	- Examples
+		- E-commerce Websites: Websites like Amazon or eBay, where users can browse products,
+		  add them to a cart, and make purchases.
+		- Social Media Platforms: Websites like Facebook, Twitter, and Instagram, where users
+ 		  can post updates, share content, and interact with others.
+		- Online Banking: Websites and applications that allow users to manage their bank 
+		  accounts, transfer money, and pay bills.
+
+	Advantages of Web Applications
+	- Accessibility: Can be accessed from any device with a web browser and internet connection.
+	- Cross-Platform Compatibility: Can run on different operating systems and devices without
+	  modification.
+	- Ease of Updates: Updates and maintenance are done on the server side, ensuring all users 
+	  have access to the latest version.
+
+//-----------------------------------------------------------------------------------------------
+
+	// Introduction to HTML
+
+	HTML (HyperText Markup Language) is the standard language used to create and design web pages.
+	It provides the basic structure of websites, which can then be enhanced and modified using 
+	other technologies such as CSS (Cascading Style Sheets) and JavaScript. HTML is the basic
+	building block of World Wide Web. 
+
+	HTML was originally developed by Tim Berners-Lee in 1990. He is also known as the father of 
+	the web. In 1996, the World Wide Web Consortium (W3C) became the authority to maintain the 
+	HTML specifications. HTML also became an international standard (ISO) in 2000. HTML5 is the 
+	latest version of HTML. HTML5 provides a faster and more robust approach to web development.
+
+	Markup languages use sets of markup tags to characterize text elements within a document, 
+	which gives instructions to the web browsers on how the document should appear. Apart from 
+	text, hypertext may contain tables, lists, forms, images, and other presentational elements. 
+	It is an easy-to-use and flexible format to share information over the Internet.
+
+	What You Can Do with HTML
+
+	There are lot more things you can do with HTML.
+	- You can publish documents online with text, images, lists, tables, etc.
+	- You can access web resources such as images, videos or other HTML document via hyperlinks.
+	- You can create forms to collect user inputs like name, e-mail address, comments, etc.
+	- You can include images, videos, sound clips, flash movies, applications and other HTML 	  	  	  documents directly inside an HTML document.
+	- You can create offline version of your website that work without internet.
+	- You can store data in the user's web browser and access later on.
+	- You can find the current location of your website's visitor.
+
+	Version history of HTML 
+
+		Year	Version
+
+		1991	HTML 1.0
+		1995	HTML 2.0
+		1997	HTML 3.2
+		1997	HTML 4.0
+		1999	HTML 4.01
+		2000	XHTML 1.0
+		2014	HTML5
+		2016	HTML5.1
+		2017	HTML5.2
+		2018	HTML Living Standard
+
+	Basic HTML Structure Example
+
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	     <title>Web Page Title</title>
+	  </head>
+	  <body>
+	   <h1>Write your Heading</h1>
+	   <p>This is a paragraph of text.</p>
+	  </body>
+	</html>
+
+	Description of HTML Structure:
+	Let us understand the brief description of the above HTML structure example.
+
+	1. The declaration of <!DOCTYPE html> defines the document type that instructs the browser
+	   about the latest version of HTML5.
+
+	2. The <html> element is used to enclose the entire HTML document. It is the root element of 
+	   the HTML web page and informs the web browser about the HTML document.
+
+	3. The <head> element contains metadata that gives the information about the document, such as
+	   the title, which is displayed in the browser’s title bar. You must close it before the body
+	   tag opens.
+
+	4. The <title> element is used to specify the title of the HTML document at the top of the 
+	   browser window. You must place this tag within the head tag and should close immediately. 	   	   	   (Optional)
+
+	5. The <body> element contains the main content of the HTML document, such as text, images, 
+	   links, and other media. The content between the body tag is visible to the user on the 
+	   web browser.
+
+	6. The <h1> element is used to define a top-level heading of the web page. We mainly use it
+	   for the main heading of the page.
+
+	7. The <p> element is used to define a text paragraph of the webpage.
+
+	This is the simple example of basic HTML structure that is the foundation for all HTML
+ 	webpages. We can expand it to build more complex web pages and applications. With the help of 
+	appropriate HTML tags and attributes, we can build structured and semantic content that web 
+	browsers can easily understand and read.
+
+	//---------------------------------------------------------------------------------------------
+
+	/// HTML Elements, Tags and Attributes in HTML
+
+	- Elements
+
+	An HTML document is a text file that consists of elements. These elements are the basic foundation of 
+	creating any web page. They are used to defining the basic structure and content in the web page.
+	
+	A pair of tags and the content within (or between) those tags are known as an HTML element.
+
+	Technically, an element in HTML usually consists of start tag <tag name>, attributes, close tag 
+	</tag name> and content between them.
+
+	- Tags
+
+	Tags are the building blocks of HTML. They are used to create elements that define the structure 
+	and content of a web page. Tags usually come in pairs: an opening tag and a closing tag. Some tags 
+	are self-closing.
+
+	- Opening Tag: The start of an HTML element, usually in the format <tagname>.
+	- Closing Tag: The end of an HTML element, usually in the format </tagname>.
+	- Self-Closing Tag: Some elements don't have closing tags .
+
+	
+	Basic HTML Tags
+
+	Here's a list of some basic HTML tags:
+	---------------------------------------------------------------------------------------------
+	Tag			Description
+	---------------------------------------------------------------------------------------------
+	<html>		Defines the root of an HTML document
+	<head>		Contains meta-information about the HTML document
+	<title>		Sets the title of the HTML document (shown in the browser's title bar or tab)
+	<body>		Defines the body of the HTML document, containing the main content
+	<h1> to <h6>	Define HTML headings, with <h1> being the highest (most important) level and 
+			<h6> the lowest
+	<p>		Defines a paragraph
+	<br>		Inserts a single line break
+	<hr>		Inserts a horizontal rule (line)
+	<a>		Defines a hyperlink
+	<img>		Embeds an image
+	<ul>		Defines an unordered list
+	<ol>		Defines an ordered list
+	<li>		Defines a list item
+	<div>		Defines a division or a section in an HTML document
+	<span>		Defines a section in a document for styling purposes
+	---------------------------------------------------------------------------------------------
+
+	---------------------------------------------------------------------------------------------
+	Tag			Description
+	---------------------------------------------------------------------------------------------
+	<table>		Defines a table
+	<tr>		Defines a row in a table
+	<td>		Defines a cell in a table
+	<th>		Defines a header cell in a table
+	<form>		Defines an HTML form for user input
+	<input>		Defines an input control
+	<button>	Defines a clickable button
+	<label>		Defines a label for an input element
+	<textarea>	Defines a multi-line text input control
+	<select>	Defines a drop-down list
+	<option>	Defines an option in a drop-down list
+	<link>		Defines the relationship between a document and an external resource 
+			(most commonly used to link to stylesheets)
+	<meta>		Defines metadata about an HTML document
+	<script>	Defines a client-side script
+	<style>		Defines style information for an HTML document
+	---------------------------------------------------------------------------------------------
+
+	HTML Attributes
+
+	Attributes define additional characteristics or properties of the element such as width and height of 
+	an image. Attributes are always specified in the start tag (or opening tag) and usually consist of 
+	name/value pairs like name="value". Attribute values should always be enclosed in quotation marks.
+
+	Also, some attributes are required for certain elements. For instance, an <img> tag must contain a 
+	src and alt attributes. 
+
+	Let's take a look at some examples of the attributes usages:
+
+	<img src="images/smiley.png" width="30" height="30" alt="Smiley">
+	<a href="https://www.google.com/" title="Search Engine">Google</a>
+	<abbr title="Hyper Text Markup Language">HTML</abbr>
+	<input type="text" value="Archer Infotech">
+
+	Key Points about Attributes
+
+	- Format: Attributes are specified within the opening tag of an element.
+		<tagname attribute="value">Content</tagname>
+
+	- Name/Value Pairs: Attributes usually consist of a name and a value separated by an equals sign (=). 
+		The value is typically enclosed in double quotes, although single quotes are also acceptable.
+		<img src="image.jpg" alt="Description of image">
+
+	- Multiple Attributes: An element can have multiple attributes.
+		<a href="https://archerinfotech.in/" target="_blank">Link</a>
+
+	- Boolean Attributes: Some attributes are boolean attributes, where the presence of the attribute 
+	  itself represents a true value.
+		<input type="checkbox" checked>
+
+	Common HTML Attributes:
+
+	- Global Attributes: These can be used on any HTML element.
+
+		- class: Specifies one or more class names for an element (used for styling).
+			<div class="container">Content</div>
+
+		- id: Specifies a unique id for an element.
+			<p id="intro">This is an introduction paragraph.</p>
+		
+		- style: Specifies an inline CSS style for an element.
+			<p style="color: red;">This is a red paragraph.</p>
+
+		- title: Provides additional information about an element (displayed as a tooltip).
+			<abbr title="HyperText Markup Language">HTML</abbr>
+
+		- lang: Specifies the language of the element's content.
+			<p lang="en">This is an English paragraph.</p>
+
+		- data-*: Used to store custom data private to the page or application.
+			<div data-user-id="12345">User Info</div>
+
+
+	- Specific Attributes: Attributes specific to certain elements.
+
+		- href (used with <a>): Specifies the URL of the linked document.
+			<a href="https://archerinfotech.in/">Visit Example</a>
+
+		- src (used with <img>, <script>, <iframe>): Specifies the URL of the image, script, or 
+		  frame source.
+			<img src="image.jpg" alt="Description of image">
+
+		- alt (used with <img>): Specifies alternative text for the image.
+			<img src="image.jpg" alt="Description of image">
+
+		- target (used with <a>): Specifies where to open the linked document.
+			<a href="https://archerinfotech.in/" target="_blank">Open in new tab</a>
+		
+		- type (used with <input>, <button>, <script>): Specifies the type of element.
+			<input type="text" name="username">
+
+		- name (used with <input>, <form>, <button>, etc.): Specifies the name of the element.
+			<input type="text" name="username">
+
+		- value (used with <input>, <button>, <option>): Specifies the value of the element.
+			<input type="submit" value="Submit">
+
+		- placeholder (used with <input> and <textarea>): Provides a hint to the user of what can be 
+			entered in the field.
+			<input type="text" placeholder="Enter your name">
+
+
+//----------------------------------------------------------------------------------------------------
+
+	// HTML Headings
+	HTML headings are used to define the headings of a web page. Headings are important for SEO (Search 
+	Engine Optimization) and accessibility, as they help search engines and screen readers understand the 
+	structure and content of a web page.
+
+	Heading Tags
+	HTML provides six levels of headings, from <h1> to <h6>, with <h1> being the highest (most important) 
+	level and <h6> being the lowest (least important) level.
+
+	<h1>: Defines the most important heading.
+	<h2>: Defines the second most important heading.
+	<h3>: Defines the third most important heading.
+	<h4>: Defines the fourth most important heading.
+	<h5>: Defines the fifth most important heading.
+	<h6>: Defines the least important heading.
+
+//-------------------------------------------------- Example ---------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML Elements</title>
+</head>
+<body>
+    <h1>HTML Elements Overview</h1>
+    <p>HTML (HyperText Markup Language) is the standard language used to create and design web pages.</p>
+    
+    <h2>What are HTML Headings?</h2>
+    <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, each indicating the importance of the content they contain.</p>
+    
+    <h3>Usage of Headings in HTML</h3>
+    <p>Headings should be used in a hierarchical order to structure the content logically and aid in search engine optimization (SEO).</p>
+    
+    <h4>Benefits of Using HTML Headings</h4>
+    <p>Proper use of headings improves accessibility by helping screen readers navigate content and enhances readability by breaking up text.</p>
+    
+    <h5>Example of HTML Headings</h5>
+    <p>Here's an example of how HTML headings can be used to organize content effectively:</p>
+    
+    <h6>Conclusion</h6>
+    <p>Understanding and correctly using HTML headings is fundamental to creating well-structured and accessible web pages.</p>
+</body>
+</html>
+
+ --------- In above program ---------------
+
+	The <meta> tag is used to provide metadata about the HTML document. Metadata is data about data, which 
+	gives information about the HTML document itself rather than its content. The <meta> tag is typically 
+	used to specify character encoding, viewport settings for responsive design, and other metadata such 
+	as authorship, keywords, and description for SEO purposes.
+
+	- charset="UTF-8": Specifies the character encoding for the document. UTF-8 is a character encoding 
+	  capable of encoding all possible characters and is widely used for web pages to support 
+	  internationalization.
+
+	- name="viewport" content="width=device-width, initial-scale=1.0": Specifies the viewport settings for
+	  responsive design. This meta tag is crucial for ensuring that the web page is displayed correctly and 
+	  adjusts to different devices and screen sizes.
+
+		- width=device-width: Sets the width of the viewport to the device's width.
+		- initial-scale=1.0: Sets the initial zoom level when the page is first loaded.
+	
+	- Other Commonly Used Attributes
+		- name: Specifies the name of the metadata property being defined.
+		- content: Specifies the value of the metadata property.
+		- http-equiv: Provides an HTTP header for the information/value of the content attribute.
+
+		<meta name="description" content="A brief description of the page content for SEO purposes">
+		<meta name="keywords" content="HTML, elements, meta tag, metadata">
+		<meta name="author" content="Your Name">
+
+//------------------------------------------------------------------------------------------------------------
+
+	HTML paragraph:
+	The <p> tag in HTML is used to define paragraphs in a web page. While its primary function is 
+	straightforward—wrapping blocks of text to create paragraphs—it can be used in various ways to 
+	enhance and structure content. 
+
+	Here are some different ways to use the <p> tag:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Paragraphs in HTML</title>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</body>
+</html>
+
+//-------------------------------------------------------------
+
+	- Line Breaks: The <br> tag is used to insert a line break on the web page. Since the <br> is an 
+		       empty element, so there is no need of corresponding </br> tag.
+
+	- Horizontal Rules: You can use the <hr> tag to create horizontal rules or lines to visually 
+	   separate content sections on a web page. Like <br>, the <hr> tag is also an empty element.
+
+	- Mutiple White Spaces and ine breaks: Normally the browser will display the multiple spaces created 
+	  inside the HTML code by pressing the space-bar key or tab key on the keyboard as a single space. 
+	  Multiple line breaks created inside the HTML code through pressing the enter key is also displayed 
+	  as a single space.
+	      Insert &nbsp; for creating extra consecutive spaces, while insert <br> tag for creating line breaks
+	  on your web pages, as demonstrated in the following example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preserving White Space in HTML</title>
+</head>
+<body>
+    <p>This paragraph has multiple&nbsp;&nbsp;&nbsp;spaces.</p>
+    <p>This paragraph has multiple<br><br>line<br><br><br>breaks.</p>
+</body>
+</html>
+
+	- Preformatted Text: Sometimes, using &nbsp;, <br>, etc. for managing spaces isn't very convenient. 
+	  Alternatively, you can use the <pre> tag to display spaces, tabs, line breaks, etc. exactly as 
+	  written in the HTML file. It is very helpful in presenting text where spaces and line breaks are 	  
+	  important like poem or code.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Preformatted Text</title>
+</head>
+<body>
+<pre>
+	I think that I shall never see	
+		A poem lovely as a tree.
+
+	A tree whose hungry mouth is prest
+	Against the earth’s sweet flowing breast;
+
+	A tree that looks at God all day,
+	And lifts her leafy arms to pray;
+
+	A tree that may in summer wear
+	A nest of robins in her hair;
+
+	Upon whose bosom snow has lain;
+	Who intimately lives with rain.
+
+	Poems are made by fools like me,
+But only God can make a tree.
+</pre>
+</body>
+</html>
+//------------------------------------------------------------------------------------------------------------------------
+	// Additional Program
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Using paragraph tag in HTML</title>
+	</head>
+	<body>
+		<p>
+		The    paragraph    tag in HTML is used to define paragraphs in a web page. While its primary function 
+
+		is straightforward—wrapping blocks of text to create paragraphs—it can be used in various ways to 
+
+		enhance and structure content. 
+		<hr>
+		</p>
+
+		<p>
+		The&nbsp; &nbsp; &nbsp; &nbsp; paragraph &nbsp; &nbsp; tag in HTML is used to define paragraphs in a web page. While its primary function <br>
+
+		is straightforward—wrapping blocks of text to create paragraphs—it can be used in various ways to <br>
+
+		enhance and structure content. 
+		</p>
+		<pre>
+			<hr>
+		The paragraph tag in HTML is used to define paragraphs in a web page. While its primary function <br>
+
+		is straightforward—wrapping blocks of text to create paragraphs—it can be used in various ways to <br>
+
+		enhance and structure content. 
+		</pre>
+		<hr>
+	</body>
+</html>
+//--------------------------------------------------------------------------------------------------------------------------
+
+	// Attributes for Both Heading and Paragraph Tags
+
+	In HTML, both heading (<h1> to <h6>) and paragraph (<p>) tags can have various attributes that modify their 
+	behavior or style.
+
+	Common Attributes for Both: id, class, style, title, lang, dir, hidden, tabindex, accesskey
+	Specific Attributes for Both: Similar to heading tags, the paragraph tag does not have unique attributes 
+				      beyond the global ones. 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Using Attributes of Heading and paragraph tags</title>
+	</head>
+	<body>
+		<h1 id="main-title" class="header" style="color: blue;" title="Main Title">This is an H1 Heading</h1>
+		<h2 class="sub-header">This is an H2 Heading</h2>
+
+		<p id="intro-paragraph" class="text" style="font-size: 16px;" title="Introduction">This is a paragraph of text.</p>
+		<p lang="en" dir="ltr">This paragraph is in English and left-to-right.</p>
+
+	</body>
+</html>
+
+//---------------------------------------------------------------------------------------------------------------------
+
+	// Simple paragraph Example 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Information</title>
+    </head>
+    <body>
+        <h1>Introduction to HTML</h1>
+        
+        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It defines the structure and layout of a web document by using a variety of tags and attributes.</p>
+        
+        <p>Each HTML tag serves a specific purpose, such as defining headings, paragraphs, links, images, forms, and more. For example, the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags define headings of different levels of importance, while the <code>&lt;p&gt;</code> tag defines paragraphs of text.</p>
+        
+        <p>HTML documents are structured as a hierarchy of elements nested within each other. The <code>&lt;html&gt;</code> tag represents the root of the document, containing two main sections: the <code>&lt;head&gt;</code> section for meta-information and the <code>&lt;body&gt;</code> section for the visible content of the page.</p>
+        
+        <p>Here's a basic example of an HTML document:</p>
+        
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;My First HTML Page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                    &lt;a href="https://archerinfotech.in/"&gt;Visit Example.com&lt;/a&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        
+        <p>HTML is a foundational technology for web development and is complemented by CSS (Cascading Style Sheets) for styling and JavaScript for dynamic behavior.</p>
+    </body>
+</html>
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+	// Using the Style attribute 
+
+     - Inline Styles
+	Inline styles are used to apply CSS directly to an HTML element using the style attribute. This method is useful for 
+	quick and specific style changes but is generally discouraged for larger projects due to poor maintainability and 
+	separation of concerns.
+	
+	// Above Example with inline style
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >HTML Information</title>
+</head>
+<body>
+        <!-- here in line style is used -->
+    <h1 style="color: navy;" style="font-size: 24px;">Introduction to HTML</h1>
+    
+    <p style="font-size: 16px; line-height: 1.5;">HTML (HyperText Markup Language) is the standard markup language for creating web pages. It defines the structure and layout of a web document by using a variety of tags and attributes.</p>
+    
+    <p style="font-size: 16px; line-height: 1.5;">Each HTML tag serves a specific purpose, such as defining headings, paragraphs, links, images, forms, and more. For example, the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags define headings of different levels of importance, while the <code>&lt;p&gt;</code> tag defines paragraphs of text.</p>
+    
+    <p style="font-size: 16px; line-height: 2.5;">HTML documents are structured as a hierarchy of elements nested within each other. The <code>&lt;html&gt;</code> tag represents the root of the document, containing two main sections: the <code>&lt;head&gt;</code> section for meta-information and the <code>&lt;body&gt;</code> section for the visible content of the page.</p>
+    
+    <p style="font-size: 16px; line-height: 1.5;">Here's a basic example of an HTML document:</p>
+    
+    <pre style="font-family: 'Courier New', monospace; background-color: #f0f0f0; padding: 10px;">
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;My First HTML Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                &lt;a href="https://archerinfotech.in/" style="color: #0066cc; text-decoration: none;">Visit Example.com&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    
+    <p style="font-size: 16px; line-height: 1.5;">HTML is a foundational technology for web development and is complemented by CSS (Cascading Style Sheets) for styling and JavaScript for dynamic behavior.</p>
+</body>
+</html>
+
+//----------------------------------------------------------------------------------------------------------------------
+
+      - Embedded Styles
+		Embedded styles are defined within a <style> element in the <head> section of the HTML document. This method keeps 
+		the style definitions separate from the content, making it easier to manage and maintain.
+
+	// Above Example with Embeeded Style
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Information</title>
+    <style>
+        p {
+            color: navy;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        pre{
+            background-color:#f0f0f0;
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- here in Embeeded style is used -->
+    <h1>Introduction to &nbsp HTML</h1>
+    
+    <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. <br> It defines the structure and layout of a web document by using a variety of tags and attributes.</p>
+    <hr>
+    <p>Each HTML tag serves a specific purpose, such as defining headings, paragraphs, links, images, forms, and more. For example, the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags define headings of different levels of importance, while the <code>&lt;p&gt;</code> tag defines paragraphs of text.</p>
+    
+    <p>HTML documents are structured as a hierarchy of elements nested within each other. The <code>&lt;html&gt;</code> tag represents the root of the document, containing two main sections: the <code>&lt;head&gt;</code> section for meta-information and the <code>&lt;body&gt;</code> section for the visible content of the page.</p>
+    
+    <p>Here's a basic example of an HTML document:</p>
+    
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;My First HTML Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                &lt;a href="https://archerinfotech.in/"&gt;Visit Example.com&lt;/a&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h1>Conclusion: </h1>
+    <p>HTML is a foundational technology for web development and is complemented by CSS (Cascading Style Sheets) for styling and JavaScript for dynamic behavior.</p>
+</body>
+</html>
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// HTML Hyperlink
+
+	HTML Hyperlinks are build using <a> tag. Formally known as anchor tag, hyperlink defines a link <a href=""> in html 
+	document. A hyperlink connect a webpage with other webpages or external pages. Hyperlink can be used as Internal Link,
+	External Link, Email Link or telephone link .
+
+	In HTML5, an hyperlink can contain both block level and inline level elements. That means, we can write text, image or 
+	a div inside hyperlink.
+	
+	By default, links will appear as follow in most of the browsers:
+
+	- An unvisited link is underlined and blue.
+	- A visited link is underlined and purple.
+	- An active link is underlined and red.
+
+
+	Anchor Tag: Anchor Tag was the previous name of hyperlinks till html4/xhtml. But HTML5 renamed anchor tag to hyperlink.
+	syntax: <a>Anchor Tag</a>
+
+	Hyperlink: Hyperlink means an a tag with href attribute. Hyperlink is used to link webpages.
+		Hyperlink Tag: <a href="">Hyperlink Tag</a>
+
+	Hyperlink Attributes: Hyperlinks included both compulsory and recommended attributes. Here is a attributes used 
+	in hyperlinks.
+
+	- href:	http path hyperlink
+
+	- target: target of hyperlink, by-default its _self.
+		_self: Default. Opens the link in the same window/tab.
+		_blank: Opens the link in a new tab/window.
+		_parent: Opens the link in the parent frame.
+		_top: Opens the link in the full body of the window.
+
+	- download: to download hyperlink path instead of opening
+	- rel: rel="noreferrer" or rel="noopener" for external links
+		(Improves security by preventing the new page from being able to access the window.opener property.)
+	- tabindex: change tabindex of hyperlinks
+
+	Type of Hyperlinks: There are six types hyperlinks. Types of Hyperlinks are defined on the basis of their path. 
+	Here are six type of html hyperlinks with example and usage.
+
+	1. Basic Hyperlink: Directs users to another webpage.
+	
+		<a href="https://archerinfotech.in/">Visit Example</a>
+
+	2. Open Link in a New Tab: Opens the link in a new browser tab.
+	
+		<a href="https://archerinfotech.in/" target="_blank">Visit Example</a>
+
+	3. Email Link: Opens the user's email client with a new email to the specified address.
+		
+		<a href="mailto:someone@example.com">Send Email</a>
+
+	4. Telephone Link: Initiates a phone call on devices that support calling.
+
+		<a href="tel:+1234567890">Call Us</a>
+
+	5. Download Link: Allows users to download a file directly.
+
+		<a href="path/to/file.zip" download>Download File</a>
+
+	6. Anchor Link (Jump to Section): Jumps to a specific section within the same page.
+
+	<!-- Link -->
+	<a href="#section1">Go to Section 1</a>
+
+	<!-- Target Section -->
+	<h2 id="section1">Section 1</h2>
+	<p>Content for section 1.</p>
+
+	7. Button Styled Link: Styles the link to look like a button.
+
+	<a href="https://archerinfotech.in/" class="button">Click Me</a>
+
+	<!-- CSS for Button -->
+	<style>
+	  .button {
+   	 	display: inline-block;
+    	 	padding: 10px 20px;
+   	 	background-color: #4CAF50;
+   	 	color: white;
+   	 	text-align: center;
+    	 	text-decoration: none;
+    	 	order-radius: 4px;
+ 	 	}
+	</style>
+
+
+	8. Image Link: Uses an image as a clickable link.
+
+	<a href="https://archerinfotech.in/">
+  		<img src="path/to/image.jpg" alt="Example Image">
+	</a>
+ 
+	9. Link to a File or Document: Provides a link to open a PDF or other document.
+
+	<a href="path/to/document.pdf">Read the Document</a>
+
+	10. Links with Rel Attributes: Improves security by preventing the new page from being able to access the 
+	window.opener property.
+
+	<a href="https://archerinfotech.in/" rel="noopener noreferrer">Visit Example</a>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Examples</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Different Ways to Use Links in HTML</h1>
+    <p><a href="https://archerinfotech.in/">Basic Link</a></p>
+    <p><a href="https://archerinfotech.in/" target="_blank">Open in New Tab</a></p>
+    <p><a href="mailto:someone@example.com">Email Link</a></p>
+    <p><a href="tel:+1234567890">Telephone Link</a></p>
+    <p><a href="path/to/file.zip" download>Download Link</a></p>
+    <p><a href="#section1">Anchor Link to Section 1</a></p>
+    <p><a href="https://archerinfotech.in/" class="button">Button Styled Link</a></p>
+    <p><a href="https://archerinfotech.in/">
+        <img src="path/to/image.jpg" alt="Example Image">
+    </a></p>
+    <p><a href="path/to/document.pdf">Link to Document</a></p>
+    <p><a href="https://archerinfotech.in/" rel="noopener noreferrer">Link with rel Attributes</a></p>
+
+    <h2 id="section1">Section 1</h2>
+    <p>Content for section 1.</p>
+</body>
+</html>
+
+
+//---------------------
+
+Example:
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Link Example</title>
+	</head>
+	<body>
+		<a href="#para1">Paragarph 1</a>
+		<a href="#para2">Paragarph 2</a>
+		<a href="#para3">Paragarph 3</a>
+		<a href="#para4">Paragarph 4</a>
+		<div>
+			<center><h1 id="top">Important Notice</h1> </center>
+			<p>
+				<h2 id="para1">Paragraph 1</h2>
+				<a href="https://www.worldbank.org/en/region/sar/overview">South Asian</a> cuisine encompasses a delectable variety of sub-cuisines and cooking styles that vary very widely, reflecting the diversity of the Indian subcontinent, even though there is a certain centrality to the general ingredients used. Terms used the recipes of varied Indian and other South Asian sub-cuisines sometimes tend to be multi-lingual and region-specific, mostly based on the author's specific sub-ethnicity, the popularity of a given vegetable/spice in a given sub-cuisine within South Asia, etc.
+				<p> <a href="#top">Top...</a></p>
+			</p>
+			<p>
+				<h2 id="para2">Paragraph 2</h2>
+				Indian cuisine is overwhelmingly vegetarian friendly and employs a variety of different fruits, vegetables, grains, and spices which vary in name from region to region within the country. Most Indian restaurants serve predominantly <a href="https://www.vegrecipesofindia.com/recipes/punjabi-recipes/" target="_Blank"> Punjabi/North Indian</a> cuisine, while a limited few serve a very limited choice of some South Indian dishes like Dosa. But for the connoisseurs, India offers a complex and eclectic array of sub-cuisines to explore, which are equally vegetarian friendly and a delight to the taste buds.
+				<p> <a href="#top">Top...</a></p>
+			</p>
+		</div>
+		
+		<div>
+			<p>
+				<h2 id="para3">Paragraph 3</h2>
+				Even for South Asian people, this wide variety of vegetables, fruits, grains and spices used in various Indian sub-cuisines can be mind-boggling because of the variety of region-specific names used for identifying the food items. Indian vegetable markets and grocery stores get their wholesale supplies from suppliers belonging to various regions/ethnicities from all over India and elsewhere, and the food suppliers/packagers mostly use sub-ethnic, region-specific item/ingredient names on the respective signs/labels used to identify specific vegetables, fruits, grains and spices based on their respective regions of origin. This further aggravates the confusion in identifying specific items/ingredients, especially for international consumers/expatriates looking to procure vegetables, fruits, grains and spices specific to Indian sub-cuisines.
+				<p> <a href="#top">Top...</a></p>
+			</p>
+			<p>
+				<h2 id="para4">Paragraph 4</h2>
+				This article attempts to centralize, compile and tabulate the various vegetables, fruits, grains and spices that are commonly employed in various South Asian sub-cuisines to help reduce this confusion in identifying and procuring various South Asian food ingredients, especially in the cross-regional, international markets/contexts.
+				<p> <a href="#top">Top...</a></p>
+			</p>
+		</div>
+		<a href="https://archerinfotech.in/">
+			<img src="archerlogo.png" alt="Archer infotech">
+		</a>
+	</body>
+</html>
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+	// HTML Text Formatting: 
+
+	HTML provides several tags that you can use to make some text on your web pages to appear differently than normal text, 
+	for example, you can use the tag <b> to make the text bold, tag <i> to make the text italic, tag <mark> to highlight the 
+	text, tag <code> to display a fragment of computer code, tags <ins> and <del> for marking editorial insertions and 
+	deletions, and more.
+
+	There are two main categories of HTML formatting tags:
+
+	- Physical Tags: These tags focus on how the text appears visually on the web page. They don't provide any semantic meaning 	  about the content itself. Examples include:
+		
+		- <b> tag: Bold text - This tag makes the enclosed text bold, but doesn't necessarily indicate importance.
+
+		  	<b>This text will be bold</b>
+
+		- <i> tag: Italic text - Similar to bold, italics change the font style to italic but don't signify importance.
+
+		  	<i>This text will be italicized</i>
+
+	- Logical Tags: These tags describe the meaning or purpose of the text, allowing browsers to interpret and potentially 
+	  display it differently. They offer more semantic value. Some examples include:
+
+		- <strong> tag: Strong text - This tag conveys that the text holds strong importance, often displayed in bold 
+		  by browsers.
+
+			<strong>This is an important point to remember.</strong>
+
+		- <em> tag: Emphasized text - This tag indicates emphasis on a word or phrase, but not necessarily strong 
+		  importance. Browsers might italicize it.
+
+			<em>Remember to pay attention to the details.</em>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formatting Text in HTML</title>
+</head>
+<body>
+    <p>This is <b>bold text</b>.</p>
+    <p>This is <strong>strongly important text</strong>.</p>
+    <p>This is <i>italic text</i>.</p>
+    <p>This is <em>emphasized text</em>.</p>
+    <p>This is <mark>highlighted text</mark>.</p>
+    <p>This is <code>computer code</code>.</p>
+    <p>This is <small>smaller text</small>.</p>
+    <p>This is <sub>subscript</sub> and <sup>superscript</sup> text.</p>
+    <p>This is <del>deleted text</del>.</p>
+    <p>This is <ins>inserted text</ins>.</p>
+</body>
+</html>             
+
+	- Formatting Quotations: 
+	      - You can easily format the quotation blocks from other sources with the HTML <blockquote> tag.
+		Blockquotes are generally displayed with indented left and right margins, along with a little extra space 
+		added above and below       
+	      - For short inline quotations, you can use the HTML <q> tag. Most browsers display inline quotes by surrounding 
+		the text in quotation marks.
+
+	- Showing Abbreviations:
+		- An abbreviation is a shortened form of a word, phrase, or name.
+		  You can use the <abbr> tag to denote an abbreviation. The title attribute is used inside this tag to provide 
+		  the full expansion of the abbreviation, which is displayed by the browsers as a tooltip when the mouse cursor 
+		  is hovered over the element. 
+
+	- Marking Contact Addresses:
+		HTML provides a special tag <address> to represent contact information (physical and/or digital) for a person, 
+				people or organization.
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<h1> <center> Doing Small things Can Make Success </center> </h1>
+			<p>
+				There are few people have the ability to do the great things and be admired by the world. In fact, many people become successful by doing the small things. As the old saying goes, 
+			</p>
+				<blockquote> 
+					<p> "If you cannot do great things, do small things in a great way."</p>
+					<cite> &mdash; Napoleon Hill</cite> 
+				</blockquote>  
+
+			<p> It means that if we haven't got the opportunity to do the great things, we can gain success by doing the small things perfectly.
+			</p>
+			<p>
+				Actually, history abounds examples to prove this saying. The late <abbr title="Chief executive officer
+				">CEO</abbr> of Apple, Steve Jobs, is a case in point. He was so addicted to details that he could not stop pushing his staff to pursue perfection in design and production. It's due to his focus on small things that Apple made great success in the mobile field.
+			</p>
+			<p>				
+				As college students, <q> we should improve ourselves by doing the small things perfectly.</q> Only when all small things are done well can we make a success.
+
+			<p>&mdash;An Artical by</p>
+				<address>
+					Microsoft India Press,
+					807, New Delhi House, 
+					Barakhamba Road, 
+					New Delhi – 110001, 
+					India.
+				</address>
+			</p>
+	</body>
+</html>
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+	// Working with HTML Lists
+
+	HTML lists are used to present list of information in well formed and semantic way. There are three different types of list 
+	in HTML and each one has a specific purpose and meaning.
+
+	- Unordered list: Used to create a list of related items, in no particular order.
+	- Ordered list: Used to create a list of related items, in a specific order.
+	- Description list: Used to create a list of terms and their descriptions.
+
+
+	- Using Unordered List: 
+	An unordered list in HTML is a collection of items that are displayed in a bulleted format. It is created 
+	using the <ul> (unordered list) element, and each item within the list is defined using the <li> (list item) 
+	element.
+		- Items in an unordered list are typically displayed with bullet points (•) by default. It Can be
+		  changed to "circle", "square" using type attrubute by default it is "disc"
+		- The type of bullet can be customized using CSS.
+		- Unordered lists can be nested to create multi-level lists.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unordered List Example</title>
+</head>
+<body>
+  <h2>My Favorite Fruits</h2>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Mango</li>
+  </ul>
+
+  <ul type="circle">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Mango</li>
+  </ul>
+
+</body>
+</html>
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+	// Nested unordered list
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Unordered List Example - Fruits</title>
+</head>
+<body>
+    <h1>Types of Fruits</h1>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apples
+                    <ul>
+                        <li>Red Delicious</li>
+                        <li>Granny Smith</li>
+                        <li>Fuji</li>
+                    </ul>
+                </li>
+                <li>Oranges
+                    <ul>
+                        <li>Navel</li>
+                        <li>Valencia</li>
+                        <li>Blood Orange</li>
+                    </ul>
+                </li>
+                <li>Berries
+                    <ul>
+                        <li>Strawberries</li>
+                        <li>Blueberries</li>
+                        <li>Raspberries</li>
+                    </ul>
+                </li>
+                <li>Bananas</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+//-------------------------------------
+
+	// After adding style
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Nested Unordered List - Fruits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        #main-container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .list-title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .nested-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .nested-list .nested-list {
+            list-style-type: circle;
+            color: #007bff; /* First nested level */
+        }
+        .nested-list .nested-list .nested-list {
+            list-style-type: square;
+            color: #28a745; /* Second nested level */
+        }
+        .list-item {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="list-title">Types of Fruits</h1>
+        <ul class="nested-list">
+            <li class="list-item">Fruits
+                <ul class="nested-list">
+                    <li class="list-item">Apples
+                        <ul class="nested-list">
+                            <li class="list-item">Red Delicious</li>
+                            <li class="list-item">Granny Smith</li>
+                            <li class="list-item">Fuji</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Oranges
+                        <ul class="nested-list">
+                            <li class="list-item">Navel</li>
+                            <li class="list-item">Valencia</li>
+                            <li class="list-item">Blood Orange</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Berries
+                        <ul class="nested-list">
+                            <li class="list-item">Strawberries</li>
+                            <li class="list-item">Blueberries</li>
+                            <li class="list-item">Raspberries</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">Bananas</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+//----------------------------------------------------------------------------------------
+
+	// ordered list in HTML
+
+	An ordered list in HTML is used to display a list of items in a specific order. Items in an ordered list are usually 
+	preceded by numbers or letters, indicating their sequence. Ordered lists are created using the <ol> element, with each 
+	item inside the list defined by an <li> (list item) element.
+
+		- Items in an ordered list are displayed with numbers (1, 2, 3, ...) by default.
+		  The type of numbering can be customized using the type attribute.
+		- Other type Attribute Values
+			"1" (default): Decimal numbers (1, 2, 3, ...)
+			"A": Uppercase letters (A, B, C, ...)
+			"a": Lowercase letters (a, b, c, ...)
+			"I": Uppercase Roman numerals (I, II, III, ...)
+			"i": Lowercase Roman numerals (i, ii, iii, ...)
+
+		- The start attribute can be used to start the numbering from a different value.
+
+			<ol start="5"> ..</ol>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Chapters - Nested Ordered List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        #main-container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .list-title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .nested-list {
+            padding-left: 20px;
+        }
+        .chapter-title {
+            color: #007bff; /* Blue color for chapter titles */
+            font-weight: bold;
+        }
+        .nested-list ol {
+            list-style-type: decimal;
+             color: brown;
+        }
+        .nested-list ol ol {
+            list-style-type: upper-roman;
+            color: #28a745; /* Green color for first nested level */
+        }
+        .nested-list ol ol ol {
+            list-style-type: lower-alpha;
+            color: #dc3545; /* Red color for second nested level */
+        }
+        .list-item {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="list-title">HTML Chapters</h1>
+        <ol class="nested-list">
+            <li class="list-item"><span class="chapter-title">Introduction to HTML</span>
+                <ol class="nested-list">
+                    <li class="list-item">What is HTML?</li>
+                    <li class="list-item">Basic Structure of an HTML Document</li>
+                    <li class="list-item">HTML Tags and Attributes</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Elements</span>
+                <ol class="nested-list">
+                    <li class="list-item">Headings
+                        <ol class="nested-list">
+                            <li class="list-item">H1 to H6</li>
+                            <li class="list-item">Importance of Headings</li>
+                        </ol>
+                    </li>
+                    <li class="list-item">Paragraphs</li>
+                    <li class="list-item">Lists
+                        <ol class="nested-list">
+                            <li class="list-item">Ordered Lists</li>
+                            <li class="list-item">Unordered Lists</li>
+                            <li class="list-item">Nested Lists</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Attributes</span>
+                <ol class="nested-list">
+                    <li class="list-item">Global Attributes</li>
+                    <li class="list-item">Event Attributes</li>
+                    <li class="list-item">Form Attributes</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">HTML Forms</span>
+                <ol class="nested-list">
+                    <li class="list-item">Form Elements
+                        <ol class="nested-list">
+                            <li class="list-item">Input</li>
+                            <li class="list-item">Textarea</li>
+                            <li class="list-item">Button</li>
+                        </ol>
+                    </li>
+                    <li class="list-item">Form Validation</li>
+                    <li class="list-item">Form Submission</li>
+                </ol>
+            </li>
+            <li class="list-item"><span class="chapter-title">Advanced HTML</span>
+                <ol class="nested-list">
+                    <li class="list-item">HTML5 New Elements</li>
+                    <li class="list-item">Multimedia Elements</li>
+                    <li class="list-item">APIs
+                        <ol class="nested-list">
+                            <li class="list-item">Canvas</li>
+                            <li class="list-item">SVG</li>
+                            <li class="list-item">Web Storage</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+//-------------------------------------------------------------------------------------------------------------------------------
+
+	- Description List
+
+	In HTML, a description list (previously known as a definition list) is used to organize and display name-value pairs. 
+	It's ideal for creating glossaries, metadata, and similar structures where a term and its description are presented.
+
+	Elements of a Description List
+		A description list is defined using three tags:
+			- <dl>: Wraps the entire list.
+			- <dt>: Defines a term (name).
+			- <dd>: Describes the term (value).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description List Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        dl {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        dt {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        dd {
+            margin: 10px 0 20px 20px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.4;
+        }
+        dt:first-of-type {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language is the standard language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets is a language used for describing the presentation of a document written in HTML or XML.</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript is a programming language that is commonly used to create interactive effects within web browsers.</dd>
+    </dl>
+</body>
+</html>
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
+	// An id and class in HTML
+
+	In HTML, both Id and Class are the element selector and are used to identify an element based on the name assign to these 
+	parameters. ID and Class selectors are the most widely used element selectors in CSS (HTML). The basic difference between 
+	ID and Class is that the ID selector is applied only to one element in a page, whereas the class selector can be applied 
+	to several elements on a single page.
+
+	What is ID in HTML?
+	In HTML, the "id" selector is used id attribute of an element. For an HTML element, the "id" name starts with the symbol 
+	'#' followed by a unique name. One important characteristics of the id element is that we can only attach one id selector 
+	to an element. Hence, the ID selector is always unique within an HTML page.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+  Id demo
+</title>
+<style>
+  #idDemo{
+     color:green;
+     font-size:25px;
+  }
+</style>
+</head>
+<body style="text-align:center">
+   <h1>Get element by Id</h1>
+   <p id="idDemo">Demo for Id selector</p>
+</body>
+</html>
+
+
+	What is CLASS in HTML?
+	In HTML, the "class" selector is used to select an element with a specific class attribute. The class selector starts 
+	with a period (.) followed by a class name. Unlike the id selector, we can attach multiple selector to an HTML element. 
+	Therefore, the class can be applied many time within a page. The important point to note about the class selector is 
+	that the class name must not be started with a number.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Class demo
+</title>
+<style>
+   p, h1{
+      text-align:center;
+   }
+   .classDemo{
+       color:orange;
+       font-size:25px;
+   }
+   
+</style>
+</head>
+<body>
+	<h1>Get element by class</h1>
+   <p class="classDemo">Demo for class selector</p>
+   <div>
+      <pre>
+            In HTML, the "class" selector is used to select an element with a specific class attribute. 
+            The class selector starts with a period (.) followed by a class name. Unlike the id selector, 
+            we can attach multiple selector to an HTML element. 
+            Therefore, the class can be applied many time within a page. 
+            The important point to note about the class selector is that the class name
+            must not be started with a number.
+      </pre>
+      <p class="classDemo">End of Topic </p>
+   </div>
+
+</body>
+</html>
+
+//-----------------------------------
+
+	//Nested Description List Example
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Description List Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        dl {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        dt {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        dd {
+            margin: 10px 0 20px 20px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.4;
+        }
+        dl dl {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: none;
+            margin: 10px 0 10px 20px;
+        }
+        dl dl dt {
+            font-size: 1em;
+            color: #0056b3;
+        }
+        dl dl dd {
+            margin: 5px 0 10px 20px;
+            font-size: 0.9em;
+            color: #333;
+        }
+        dt:first-of-type {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Description List Example</h1>
+    <dl>
+        <dt>Web Technologies</dt>
+        <dd>
+            <dl>
+                <dt>Frontend</dt>
+                <dd>HTML, CSS, JavaScript</dd>
+                <dt>Backend</dt>
+                <dd>Node.js, Python, Ruby</dd>
+            </dl>
+        </dd>
+        <dt>Databases</dt>
+        <dd>MySQL, PostgreSQL, MongoDB</dd>
+    </dl>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Sample Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------
+In the context of web development and HTTP protocol, "POST" and "GET" are two different methods used to send data from a client (such as a web browser) to a server.
+
+GET Method:
+- Purpose: Used to request data from a specified resource.
+- Data Handling: Sends data in the URL as part of the request header (query parameters).
+- Security: Less secure for sensitive data because data is visible in the URL.
+- Idempotent: Generally considered idempotent, meaning multiple identical requests should have the same effect as a single request.
+- Caching: Can be cached and bookmarked because data is in the URL.
+
+POST Method:
+- Purpose: Used to submit data to be processed to a specified resource.
+- Data Handling: Sends data in the body of the HTTP request.
+- Security: More secure for sensitive data because data is not visible in the URL.
+- Idempotent: Not idempotent by default, meaning repeated identical requests may have different effects.
+- Caching: Generally not cached and cannot be bookmarked because data is in the request body.
+
+Use Cases:
+- GET: Suitable for retrieving data or when the request does not change server state (e.g., fetching search results).
+- POST: Suitable for sending sensitive information (like passwords), uploading files, or making changes that modify server-side data.
+
+Example:
+- GET Example: 'https://example.com/search?query=term'
+
+- POST Example: 
+ 
+  <form action="https://example.com/formhandler" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Submit</button>
+  </form>
+ 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+In HTML, there are several types of input elements that allow users to enter data and interact with web forms. Here's a list of common input types along with brief descriptions:
+
+1. Text Input (<input type="text">):
+   - Used for single-line text input fields.
+   - Example: <input type="text" id="username" name="username">
+
+2. Password Input (<input type="password">):
+   - Similar to text input but hides the entered characters (typically as asterisks or dots) for security reasons.
+   - Example: <input type="password" id="password" name="password">
+
+3. Checkbox (<input type="checkbox">):
+   - Allows users to select one or more options from a list of choices.
+   - Example: 
+     html
+     <input type="checkbox" id="option1" name="option1" value="value1">
+     <label for="option1">Option 1</label>
+     
+
+4. Radio Button (<input type="radio">):
+   - Allows users to select only one option from a list of choices.
+   - Example: 
+     html
+     <input type="radio" id="option1" name="options" value="option1">
+     <label for="option1">Option 1</label><br>
+     <input type="radio" id="option2" name="options" value="option2">
+     <label for="option2">Option 2</label><br>
+     
+
+5. Number Input (<input type="number">):
+   - Allows users to enter a number. Typically includes controls for incrementing and decrementing the value.
+   - Example: <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+6. Date Input (<input type="date">):
+   - Allows users to select a date from a calendar picker.
+   - Example: <input type="date" id="birthdate" name="birthdate">
+
+7. Time Input (<input type="time">):
+   - Allows users to select a time (hour and minute) from a time picker.
+   - Example: <input type="time" id="meeting-time" name="meeting-time">
+
+8. Email Input (<input type="email">):
+   - Validates that the entered text is in an email format.
+   - Example: <input type="email" id="email" name="email">
+
+9. File Input (<input type="file">):
+   - Allows users to select one or more files to upload to the server.
+   - Example: <input type="file" id="fileUpload" name="fileUpload">
+
+10. Hidden Input (<input type="hidden">):
+    - Used to store a hidden value that is not displayed to the user but is sent with the form submission.
+    - Example: <input type="hidden" id="secretToken" name="secretToken" value="abc123">
+
+These are some of the most commonly used input types in HTML forms. Each type serves a specific purpose and provides different functionalities to enhance user interaction and data input capabilities on web pages.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Form Example</title>
+</head>
+<body>
+
+<h2>HTML Form with Different Input Types</h2>
+
+<form action="/submit-form" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+    
+    <label for="meeting-time">Meeting Time:</label>
+    <input type="time" id="meeting-time" name="meeting-time"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="fileUpload">Upload File:</label>
+    <input type="file" id="fileUpload" name="fileUpload"><br><br>
+    
+    <label for="interests">Interests:</label><br>
+    <input type="checkbox" id="interest1" name="interests" value="coding">
+    <label for="interest1">Coding</label><br>
+    
+    <input type="checkbox" id="interest2" name="interests" value="reading">
+    <label for="interest2">Reading</label><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------
+HTML <iframe>
+
+An HTML <iframe> (Inline Frame) is used to embed another HTML document within the current HTML document. 
+The <iframe> element is often used to include content from another source, such as a different website or another page within the same website.
+
+Basic Syntax
+<iframe src="URL" width="300" height="200"></iframe>
+
+Attributes
+The <iframe> element comes with several attributes that can be used to customize its behavior and appearance:
+
+	- src: Specifies the URL of the page to embed.
+	- width: Specifies the width of the iframe in pixels or percentage.
+ 	- height: Specifies the height of the iframe in pixels or percentage.
+	- name: Assigns a name to the iframe, which can be used as a target for links.
+	- frameborder: Specifies whether or not to display a border around the iframe (deprecated in HTML5).
+	- allowfullscreen: Allows the iframe to be displayed in full-screen mode.
+	- sandbox: Applies extra restrictions on the content within the iframe for security purposes.
+
+Eg.
+Here’s an example that embeds a YouTube video and Web Pages using an <iframe>:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Example</title>
+</head>
+<body>
+
+<h2>Embedding a YouTube Video</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+
+<h2>Embedding Another Web Page</h2>
+
+<iframe src="https://www.archerinfotech.com" width="600" height="400"></iframe>
+
+</body>
+</html>
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+HTML Layout
+
+Eg.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Layout</title>
+    </head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>This is a brief introduction to my website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about us goes here.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details about our services can be found here.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>How to reach us will be detailed here.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+* Differenc between HTML and HTML5:
+
+------------------------------------------------------------------------------------------------------------
+| Feature                   | HTML                                    | HTML5                              |
+------------------------------------------------------------------------------------------------------------
+| Doctype Declaration       | <!DOCTYPE HTML PUBLIC "-//W3C//DTD      | <!DOCTYPE html>                    |
+|                           | HTML 4.01//EN"                          |                                    |
+|                           | "http://www.w3.org/TR/html4/strict.dtd">|                                    |
+------------------------------------------------------------------------------------------------------------
+| Character Encoding        | <meta http-equiv="Content-Type"         | <meta charset="UTF-8">             |
+|                           | content="text/html; charset=UTF-8">     |                                    |
+------------------------------------------------------------------------------------------------------------
+| New Elements              | Limited to basic tags like <div>,       | New semantic elements like <article>,|
+|                           | <span>, <table>, etc.                   | <section>, <nav>, <header>,        |
+|                           |                                         | <footer>, <aside>, <figure>, etc.  |
+------------------------------------------------------------------------------------------------------------
+| Form Elements             | Basic form elements such as <input>,    | New input types: email, url, date, |
+|                           | <select>, <textarea>                    | number, range, color, etc.         |
+|                           |                                         | New attributes: placeholder,       |
+|                           |                                         | required, pattern, autofocus       |
+------------------------------------------------------------------------------------------------------------
+| Multimedia Support        | Requires plugins like Flash for audio   | Native support for audio and video |
+|                           | and video                               | with <audio> and <video> elements  |
+------------------------------------------------------------------------------------------------------------
+| Canvas and SVG            | Not natively supported, required        | Native support for <canvas> and    |
+|                           | external plugins or workarounds         | scalable vector graphics (SVG) for |
+|                           |                                         | drawing and animations             |
+------------------------------------------------------------------------------------------------------------
+| Geolocation               | Not available                           | Geolocation API allows location    |
+|                           |                                         | data to be used in web applications|
+------------------------------------------------------------------------------------------------------------
+| Local Storage             | Limited to cookies                      | Web Storage API with localStorage  |
+|                           |                                         | and sessionStorage for storing     |
+|                           |                                         | data on the client side            |
+------------------------------------------------------------------------------------------------------------
+| Web Sockets               | Not available                           | WebSocket API for full-duplex      |
+|                           |                                         | communication channels over a      |
+|                           |                                         | single TCP connection              |
+------------------------------------------------------------------------------------------------------------
+| Offline Support           | Not available                           | Offline support through AppCache   |
+|                           |                                         | and Service Workers for creating   |
+|                           |                                         | web applications that work offline |
+------------------------------------------------------------------------------------------------------------
+| Drag and Drop             | Limited support                         | Enhanced drag and drop functionality|
+|                           |                                         | with the Drag and Drop API         |
+------------------------------------------------------------------------------------------------------------
+| Microdata                 | Not available                           | Microdata API to annotate content  |
+|                           |                                         | with machine-readable tags for     |
+|                           |                                         | better search engine optimization  |
+|                           |                                         | (SEO)                              |
+------------------------------------------------------------------------------------------------------------
+| MathML                    | Not supported                           | Native support for mathematical    |
+|                           |                                         | markup using MathML                |
+------------------------------------------------------------------------------------------------------------
+| Performance               | Relatively slower, dependent on         | Optimized for better performance   |
+|                           | plugins for many features               | and reduced reliance on plugins    |
+------------------------------------------------------------------------------------------------------------
+| Mobile Compatibility      | Not specifically designed for mobile    | Better support for mobile devices  |
+|                           | devices                                 | with responsive design principles  |
+------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+HTML5 is the latest version of HTML. HTML5 provides a faster and more robust approach to web development.
+
+HTML5, the latest version of the HyperText Markup Language, offers numerous new features and advantages over its predecessors. Here are some of the key highlights:
+
+
+* New Features of HTML5
+
+1. Semantic Elements:
+   - \<header\>, \<footer\>, \<article\>, \<section\>, \<aside\>, \<nav\>: These elements provide more meaningful structure to web documents.
+
+2. Multimedia Support:
+   - \<audio\> and \<video\>: Native support for audio and video embedding without the need for external plugins like Flash.
+   - \<track\>: For adding subtitles and captions to video and audio content.
+
+3. Graphics and Visuals:
+   - \<canvas\>: A versatile element for drawing graphics, animations, and interactive content using JavaScript.
+   - SVG (Scalable Vector Graphics): Integrated support for SVG for vector-based graphics directly in the markup.
+
+4. Forms and Input Enhancements:
+   - New input types like email, url, date, time, number, range, search, and color.
+   - New form attributes like placeholder, required, autofocus, pattern, autocomplete, and datalist.
+
+5. APIs and DOM Enhancements:
+   - Geolocation API: Enables web applications to access the geographical location of a user.
+   - Web Storage API: LocalStorage and SessionStorage for storing data on the client side.
+   - WebSockets: For real-time communication between the client and server.
+   - Web Workers: Allows for background script processing, improving performance.
+   - History API: For manipulating the browser history for single-page applications.
+   - Drag and Drop API: For implementing drag-and-drop functionality.
+
+6. Offline Capabilities:
+   - Application Cache: Allows web applications to run offline by caching resources.
+   - Service Workers: A more modern approach to offline capabilities and background syncing.
+
+7. Enhanced Accessibility:
+   - Better support for ARIA (Accessible Rich Internet Applications) attributes, improving the accessibility of web content for people with disabilities.
+
+
+* Advantages of HTML5
+
+1. Improved User Experience: Enhanced multimedia support, better form controls, and more interactive elements contribute to a richer and more engaging user experience.
+
+2. Cross-Platform Compatibility: HTML5 is designed to work seamlessly across different devices and platforms, from desktops to mobile devices.
+
+3. Performance and Speed: With features like Web Workers and improved parsing rules, HTML5 provides better performance and faster load times.
+
+4. Cleaner Code and Better Structure: Semantic elements make the code more readable and maintainable, facilitating better SEO and easier collaboration among developers.
+
+5. Reduced Dependence on Plugins: Native support for audio, video, and graphics reduces the need for external plugins, enhancing security and performance.
+
+6. Offline Access: Features like Application Cache and Service Workers enable offline access to web applications, improving usability when internet connectivity is poor or unavailable.
+
+7. Enhanced APIs: New APIs provide developers with more powerful tools to create advanced web applications, from real-time communication to offline capabilities and complex graphics.
+
+8. Future-Proofing: HTML5's widespread adoption and support from modern browsers ensure that web applications built with it are more future-proof and likely to remain compatible with future technologies and standards.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Semantic Elements :
+
+Eg. 1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML5 Web Page Layout</title>
+<style>
+    body {
+        font: 14px Arial,sans-serif; 
+        margin: 0px;
+    }
+    header {
+        padding: 10px 20px;
+        background: #acb3b9; 
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    .container {
+        width: 100%;
+        background: #f2f2f2;  
+    }
+    nav, section {
+        float: left; 
+        padding: 20px;
+        min-height: 170px;
+        box-sizing: border-box;
+    }
+    section {
+        width: 80%;
+    }
+    nav {
+        width: 20%;             
+        background: #d4d7dc;
+    }    
+    nav ul {
+        list-style: none; 
+        line-height: 24px;
+        padding: 0px; 
+    }
+    nav ul li a {
+        color: #333;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    footer {
+        background: #acb3b9;            
+        text-align: center;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tutorial Republic</h1>
+        </header>
+        <div class="wrapper clearfix">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Welcome to our site</h2>
+                <p>Here you will learn how to create websites...</p>
+            </section>
+        </div>
+        <footer>
+            <p>copyright &copy; tutorialrepublic.com</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+Eg. 2:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the homepage of our website. Here you will find the latest news and updates.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a company dedicated to providing the best services in the industry. Learn more about our mission and values.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover the range of services we offer and find out how we can help you achieve your goals.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, feel free to reach out to us through the contact form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+1. <audio> Element:
+	<audio controls>: Embeds an audio player with controls (play, pause, etc.).
+	<source>: Specifies the audio file to be played, with the type attribute indicating the format.
+
+2. <video> Element:
+	<video controls width="640" height="360">: Embeds a video player with controls and specified dimensions.
+	<source>: Specifies the video files in different formats for compatibility across browsers.
+	<track>: Provides subtitles or captions. The kind attribute specifies the type of track (e.g., "subtitles", "captions", "descriptions", "chapters"). 
+		The src attribute points to a WebVTT file for the subtitles, and srclang specifies the language.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Multimedia Program:
+
+Eg:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Support Example</title>
+    <style>
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multimedia Support in HTML5</h1>
+
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="path/to/your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Example</h2>
+    <video controls width="640" height="360">
+        <source src="path/to/your-video-file.mp4" type="video/mp4">
+        <source src="path/to/your-video-file.webm" type="video/webm">
+        Your browser does not support the video element.
+        <track kind="subtitles" src="path/to/your-subtitles-file.vtt" srclang="en" label="English">
+    </video>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Graphics and Visuals:
+
+<canvas> Element:
+	<canvas id="myCanvas" width="400" height="300"></canvas>: Defines a canvas area where graphics can be drawn.
+	JavaScript: Used to draw on the canvas:
+	- fillRect(x, y, width, height): Draws a filled rectangle.
+	- arc(x, y, radius, startAngle, endAngle, anticlockwise): Draws a circle.
+	- fill() and stroke(): Fill and stroke the shapes with specified colors.
+
+SVG (Scalable Vector Graphics):
+	- <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">: Defines an SVG element with specified dimensions.
+	- <rect>: Draws a rectangle with fill and stroke properties.
+	- <circle>: Draws a circle with fill and stroke properties.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Eg.: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics and Visuals Example</title>
+    <style>
+        canvas, svg {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        svg {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Graphics and Visuals in HTML5</h1>
+
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw a rectangle
+        ctx.fillStyle = 'lightblue';
+        ctx.fillRect(50, 50, 200, 100);
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(300, 150, 50, 0, Math.PI * 2, false);
+        ctx.fillStyle = 'orange';
+        ctx.fill();
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+    </script>
+
+    <h2>SVG Example</h2>
+    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Draw a rectangle -->
+        <rect x="50" y="50" width="200" height="100" fill="lightgreen" stroke="black" stroke-width="2" />
+
+        <!-- Draw a circle -->
+        <circle cx="300" cy="150" r="50" fill="purple" stroke="black" stroke-width="2" />
+    </svg>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Forms and Input Enhancements:
+
+1. New Input Types:
+
+	- <input type="email">: Validates that the input is in the format of an email address.
+	- <input type="url">: Validates that the input is in the format of a URL.
+	- <input type="date">: Allows the user to select a date.
+	- <input type="time">: Allows the user to select a time.
+	- <input type="number">: Allows numeric input with optional constraints like min, max, and step.
+	- <input type="range">: Provides a slider for selecting a value within a range.
+	- <input type="search">: Provides a search field with an optional clear button.
+	- <input type="color">: Allows the user to select a color.
+
+2. New Form Attributes:
+
+	- placeholder: Provides a hint to the user about what to enter in the input field.
+	- required: Makes the field mandatory to fill out before submitting the form.
+	- autofocus: Automatically focuses the field when the page loads (not used in this example but can be added).
+	- pattern: Specifies a regular expression that the input must match (not used in this example but can be added for validation).
+	- autocomplete: Controls whether the browser should auto-fill the input field based on previous entries (not used in this example but can be added).
+	- <textarea>: Used for multi-line text input, with the rows attribute specifying the visible height.
+	- <select>: Provides a dropdown menu for selecting from a list of options.
+
+
+Eg:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Forms and Input Enhancements</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Form Example</h1>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="url">Website URL:</label>
+        <input type="url" id="url" name="url" placeholder="https://example.com">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" step="1" required>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100" step="1" value="50">
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search..." required>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Datalist
+
+A <datalist> element in HTML provides an autocomplete feature for an <input> element. 
+Here is a basic example:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Example</title>
+</head>
+<body>
+    <h2>Datalist Example</h2>
+    
+    <label for="car">Choose a car:</label>
+    <input list="cars" id="car" name="car" placeholder="Select a car...">
+    
+    <datalist id="cars">
+        <option value="Audi">
+        <option value="BMW">
+        <option value="Mercedes">
+        <option value="Tesla">
+        <option value="Toyota">
+    </datalist>
+    
+</body>
+</html>
+
+
+In this example:
+
+- The <input> element is associated with the <datalist> through the list attribute.
+- The <datalist> element contains a set of <option> elements, each representing a possible value for the input.
+- When the user starts typing in the input field, a dropdown list of options from the datalist appears, allowing the user to choose one of the options.
+
+You can add more <option> elements to the <datalist> to expand the list of autocomplete options.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+The <details> and <summary> elements in HTML are used to create expandable content. 
+The <summary> element defines a visible heading for the <details> element, and the content within the <details> element is hidden until the user clicks on the summary.
+
+Here is an example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details and Summary Example</title>
+</head>
+<body>
+    <h2>Details and Summary Example</h2>
+    
+    <details>
+        <summary>More about HTML5</summary>
+        <p>HTML5 is the latest version of the Hypertext Markup Language, the code that describes web pages. It is the fifth and current version of the HTML standard.</p>
+        <ul>
+            <li>Improved support for embedding multimedia</li>
+            <li>New form controls</li>
+            <li>Better support for web applications</li>
+            <li>Enhanced semantic elements</li>
+        </ul>
+    </details>
+    
+    <details>
+        <summary>More about CSS3</summary>
+        <p>CSS3 is the latest evolution of the Cascading Style Sheets language, bringing new features like rounded corners, shadows, gradients, transitions, and animations, as well as new layouts like multi-columns, flexible box or grid layouts.</p>
+    </details>
+    
+    <details>
+        <summary>More about JavaScript</summary>
+        <p>JavaScript is a versatile programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.</p>
+        <p>JavaScript has dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+    </details>
+    
+</body>
+</html>
+
+
+===================================================================================================================================================
+
+Nested Detail and Summary:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Details and Summary Example</title>
+</head>
+<body>
+    <h2>Nested Details and Summary Example</h2>
+    
+    <details>
+        <summary>More about HTML5</summary>
+        <p>HTML5 is the latest version of the Hypertext Markup Language, the code that describes web pages. It is the fifth and current version of the HTML standard.</p>
+        <ul>
+            <li>Improved support for embedding multimedia</li>
+            <li>New form controls</li>
+            <li>Better support for web applications</li>
+            <li>Enhanced semantic elements</li>
+        </ul>
+        
+        <details>
+            <summary>Multimedia Support</summary>
+            <p>HTML5 introduced new elements like <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> to better support multimedia content.</p>
+            <details>
+                <summary>Audio Element</summary>
+                <p>The <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It can contain one or more audio sources.</p>
+            </details>
+            <details>
+                <summary>Video Element</summary>
+                <p>The <code>&lt;video&gt;</code> element is used to embed video content in documents. It can contain multiple video sources with different formats.</p>
+            </details>
+        </details>
+        
+        <details>
+            <summary>Form Controls</summary>
+            <p>HTML5 introduced new form controls like date pickers, color pickers, and range sliders to enhance the user experience.</p>
+        </details>
+    </details>
+    
+    <details>
+        <summary>More about CSS3</summary>
+        <p>CSS3 is the latest evolution of the Cascading Style Sheets language, bringing new features like rounded corners, shadows, gradients, transitions, and animations, as well as new layouts like multi-columns, flexible box or grid layouts.</p>
+        
+        <details>
+            <summary>Transitions and Animations</summary>
+            <p>CSS3 provides powerful tools for creating smooth transitions and animations without the need for JavaScript.</p>
+        </details>
+        
+        <details>
+            <summary>Flexible Box Layout</summary>
+            <p>The Flexible Box Layout, or Flexbox, is a layout model that allows items in a container to be automatically arranged and aligned.</p>
+        </details>
+    </details>
+    
+    <details>
+        <summary>More about JavaScript</summary>
+        <p>JavaScript is a versatile programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.</p>
+        <p>JavaScript has dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+        
+        <details>
+            <summary>Dynamic Typing</summary>
+            <p>In JavaScript, variables can hold different data types at different times, providing great flexibility in coding.</p>
+        </details>
+        
+        <details>
+            <summary>Prototype-Based Object Orientation</summary>
+            <p>JavaScript uses prototypes for inheritance, which allows objects to share properties and methods.</p>
+        </details>
+    </details>
+    
+</body>
+</html>
+
+
+
+In this example:
+
+- Each <details> element creates an expandable section.
+- The <summary> element provides a clickable heading for each section.
+- The content inside the <details> element is hidden until the user clicks on the <summary> element.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Maps: 
+
+Here's an example of how you can embed the provided Google Maps iframe within an HTML document:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Embed Example</title>
+</head>
+<body>
+    <h2>Archer Infotech Location</h2>
+    
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.636341545602!2d73.80847737141428!3d18.500124531343353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe592dccbf1%3A0x539e5f9e90dcca38!2sArcher%20Infotech!5e0!3m2!1sen!2sin!4v1722318708734!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</body>
+</html>
+
+In this example:
+
+- The <iframe> element is used to embed the Google Maps location of Archer Infotech.
+- The src attribute contains the URL with the embedded Google Maps link.
+- The width and height attributes specify the dimensions of the embedded map.
+- The style attribute is used to remove the border around the iframe.
+- The allowfullscreen attribute allows the iframe to be displayed in fullscreen mode.
+- The loading="lazy" attribute defers loading the iframe content until it is near the viewport.
+- The referrerpolicy="no-referrer-when-downgrade" attribute sets the referrer policy for the iframe.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS:
+
+* 1. Introduction to CSS
+- "What is CSS?"
+  - CSS stands for Cascading Style Sheets.
+  - It's used to style and layout web pages.
+
+* 2. CSS Syntax
+- "Basic Structure"
+  - Explain selectors, properties, and values.
+  - Example:
+    
+    selector {
+        property: value;
+    }
+    
+
+* 3. How to Add CSS to HTML
+- "Inline CSS"
+  - Example:
+    
+    <p style="color: red;">This is a red paragraph.</p>
+    
+- "Internal CSS"
+  - Example:
+    
+    <head>
+      <style>
+        p {
+          color: blue;
+        }
+      </style>
+    </head>
+    
+- "External CSS"
+  - Example:
+    
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    
+    /* styles.css */
+    p {
+        color: green;
+    }
+    
+
+* 4. Basic Selectors
+- "Type Selector"
+  - Example:
+    
+    p {
+        color: blue;
+    }
+    
+- "Class Selector"
+  - Example:
+    
+    <p class="intro">This is an introduction paragraph.</p>
+    
+    
+    .intro {
+        color: green;
+    }
+    
+- "ID Selector"
+  - Example:
+    
+    <p id="main">This is the main paragraph.</p>
+    
+    
+    #main {
+        color: red;
+    }
+    
+
+* 5. CSS Properties
+
+- "Color and Background"
+  - color
+  - background-color
+
+- "Text Formatting"
+  - font-size
+  - font-family
+  - text-align
+
+- "Box Model"
+  - margin
+  - padding
+  - border
+  - width
+  - height
+
+* 6. Practical Example
+- Create a simple web page and style it using what you've taught so far.
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Basics</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+          }
+          h1 {
+              color: navy;
+          }
+          p {
+              font-size: 16px;
+          }
+          .highlight {
+              background-color: yellow;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Welcome to CSS</h1>
+      <p>This is a paragraph styled with CSS.</p>
+      <p class="highlight">This paragraph is highlighted.</p>
+  </body>
+  </html>
+
+
+* 7. CSS Comments
+- Explain how to add comments in CSS, which are useful for documentation and organizing code.
+  
+  /* This is a comment */
+  p {
+      color: blue; /* This comment is inline */
+  }
+  
+
+* 8. CSS Specificity
+- How CSS applies styles based on specificity rules.
+
+  - Example:
+    html
+    <p class="intro" id="main">This is a paragraph.</p>
+    
+    
+    p {
+        color: blue; /* Least specific */
+    }
+    .intro {
+        color: green; /* More specific */
+    }
+    #main {
+        color: red; /* Most specific */
+    }
+    
+
+* 9. Grouping and Nesting Selectors
+- "Grouping Selectors"
+  - Example:
+    
+    h1, h2, h3 {
+        color: navy;
+    }
+    
+- "Nesting Selectors"
+  - Example:
+    
+    .container p {
+        color: blue;
+    }
+    
+
+* 10. Advanced Selectors
+- "Descendant Selector"
+  - Example:
+    
+    div p {
+        color: brown;
+    }
+    
+- "Child Selector"
+  - Example:
+    
+    div > p {
+        color: orange;
+    }
+    
+- "Attribute Selector"
+  - Example:
+    
+    a[href^="https"] {
+        color: green;
+    }
+    
+
+* 11. Pseudo-classes and Pseudo-elements
+- "Pseudo-classes"
+  - Example:
+    
+    a:hover {
+        color: red;
+    }
+    
+- "Pseudo-elements"
+  - Example:
+    
+    p::first-line {
+        font-weight: bold;
+    }
+    
+
+* 12. Box Model in Detail
+- Explain the CSS Box Model, including content, padding, border, and margin.
+- Use visual aids to illustrate how the box model works.
+- Example:
+  html
+  <div class="box">Content</div>
+  
+  
+  .box {
+      width: 200px;
+      height: 100px;
+      padding: 10px;
+      border: 5px solid black;
+      margin: 20px;
+      background-color: lightblue;
+  }
+  
+
+* 13. Flexbox Basics
+- Introduce the Flexbox layout model for creating responsive layouts.
+- Basic properties like display: flex;, justify-content, align-items, and flex-direction.
+- Example:
+  html
+  <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+  </div>
+  
+  
+  .flex-container {
+      display: flex;
+      justify-content: space-between;
+  }
+  .flex-item {
+      background-color: coral;
+      padding: 10px;
+      margin: 5px;
+  }
+  
+
+* 14. Media Queries
+- Explain how to use media queries for responsive design.
+- Example:
+  
+  @media (max-width: 600px) {
+      body {
+          background-color: lightgreen;
+      }
+  }
+  
+
+* 15. CSS Variables
+- Introduce CSS variables (custom properties) for reusable values.
+- Example:
+   Exercise
+  :root {
+      --main-color: #3498db;
+      --secondary-color: #2ecc71;
+  }
+  body {
+      color: var(--main-color);
+  }
+  p {
+      background-color: var(--secondary-color);
+  }
+  
+
+ -------------------------------------------------------------------------------------------------------------------------------------
+
+>>> Advanced CSS Topics
+
+*  2: Advanced Selectors and Combinators
+1. "Advanced Selectors"
+   - Attribute selectors
+     
+     a[href^="https"] { color: green; }
+     
+   - Pseudo-classes (e.g., :nth-child, :first-child, :last-child)
+     
+     p:nth-child(2) { color: blue; }
+     
+   - Pseudo-elements (e.g., ::before, ::after)
+     
+     p::before { content: "Note: "; color: red; }
+     
+   
+2. "Combinators"
+   - Descendant combinator
+     
+     div p { color: brown; }
+     
+   - Child combinator
+     
+     div > p { color: orange; }
+     
+   - Adjacent sibling combinator
+     
+     h1 + p { color: purple; }
+     
+   - General sibling combinator
+     
+     h1 ~ p { color: pink; }
+     
+
+*  3: Responsive Design
+1. "Media Queries in Depth"
+   - Different breakpoints for responsiveness
+     
+     @media (max-width: 768px) {
+         body { background-color: lightblue; }
+     }
+     @media (max-width: 480px) {
+         body { background-color: lightgreen; }
+     }
+     
+   
+2. "Flexible Layouts with Flexbox"
+   - Advanced Flexbox properties (e.g., flex-grow, flex-shrink, flex-basis)
+     
+     .flex-item {
+         flex-grow: 1;
+         flex-shrink: 1;
+         flex-basis: 100px;
+     }
+     
+   
+3. "Grid Layout"
+   - Introduction to CSS Grid
+     
+     .grid-container {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 10px;
+     }
+     .grid-item {
+         background-color: coral;
+         padding: 20px;
+     }
+     
+
+4: CSS Animations and Transitions
+1. "Transitions"
+   - Basics of CSS transitions
+     
+     .box {
+         width: 100px;
+         height: 100px;
+         background-color: blue;
+         transition: background-color 0.5s ease;
+     }
+     .box:hover {
+         background-color: red;
+     }
+     
+
+2. "Animations"
+   - Keyframes and animation properties
+     
+     @keyframes example {
+         from { background-color: red; }
+         to { background-color: yellow; }
+     }
+     .animated-box {
+         width: 100px;
+         height: 100px;
+         background-color: red;
+         animation: example 5s infinite;
+     }
+     
+
+5: CSS Frameworks and Preprocessors
+1. "CSS Frameworks"
+   - Introduction to popular CSS frameworks like Bootstrap
+     html
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <div class="container">
+         <div class="row">
+             <div class="col">
+                 Column 1
+             </div>
+             <div class="col">
+                 Column 2
+             </div>
+         </div>
+     </div>
+     
+
+2. "CSS Preprocessors"
+   - Introduction to SASS/SCSS
+     
+     $primary-color: #333;
+
+     body {
+         color: $primary-color;
+     }
+     
+
+* Interactive Exercises and Homework
+- "Exercise 1": Use advanced selectors to style different elements on a page.
+- "Exercise 2": Create a responsive navigation bar using media queries and Flexbox.
+- "Exercise 3": Implement a CSS Grid layout for a photo gallery.
+- "Exercise 4": Add transitions and animations to enhance user interactions.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+* Flexbox and CSS Grid
+
+Both Flexbox and CSS Grid are powerful layout systems in CSS that allow for complex designs and layouts. 
+Each has its strengths and use cases:
+
+ "Flexbox (Flexible Box Layout)"
+
+Flexbox is designed for one-dimensional layouts, either in a row or a column. It’s great for distributing space and aligning items within a container.
+
+"Key Properties:"
+
+- "Container Properties:"
+  - display: flex; — Defines a flex container and enables flex context for its children.
+  - flex-direction: row | column; — Defines the direction of the flex items (default is row).
+  - flex-wrap: nowrap | wrap | wrap-reverse; — Defines whether flex items should wrap onto multiple lines.
+  - justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; — Aligns flex items along the main axis.
+  - align-items: flex-start | flex-end | center | baseline | stretch; — Aligns flex items along the cross axis.
+  - align-content: flex-start | flex-end | center | space-between | space-around | stretch; — Aligns flex lines within the flex container.
+
+- "Item Properties:"
+  - flex-grow: number; — Defines the ability of a flex item to grow if needed.
+  - flex-shrink: number; — Defines the ability of a flex item to shrink if needed.
+  - flex-basis: length | auto; — Defines the initial main size of a flex item.
+  - flex: none | [flex-grow] [flex-shrink] [flex-basis]; — A shorthand for flex-grow, flex-shrink, and flex-basis.
+  - align-self: auto | flex-start | flex-end | center | baseline | stretch; — Allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+
+"Example:"
+
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+</div>
+
+<style>
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-item {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+</style>
+
+
+ "CSS Grid"
+
+CSS Grid Layout is designed for two-dimensional layouts, both rows and columns. It’s ideal for creating complex grid-based layouts.
+
+"Key Properties:"
+
+- "Container Properties:"
+  - display: grid; — Defines a grid container.
+  - grid-template-columns: repeat(4, 1fr)| [line-name] size; — Defines the number and size of columns.
+  - grid-template-rows: repeat(n, size) | [line-name] size; — Defines the number and size of rows.
+  - grid-template-areas: "area1 area2" "area3 area4"; — Defines named grid areas.
+  - grid-column-gap: size; — Defines the gap between columns.
+  - grid-row-gap: size; — Defines the gap between rows.
+  - grid-gap: size; — Shorthand for grid-column-gap and grid-row-gap.
+  - justify-items: start | end | center | stretch; — Aligns grid items along the inline (row) axis.
+  - align-items: start | end | center | stretch; — Aligns grid items along the block (column) axis.
+  - justify-content: start | end | center | stretch | space-between | space-around | space-evenly; — Aligns the grid within the container.
+  - align-content: start | end | center | stretch | space-between | space-around | space-evenly; — Aligns grid rows within the container.
+
+- "Item Properties:"
+  - grid-column: start / end; — Defines how many columns an item should span.
+  - grid-row: start / end; — Defines how many rows an item should span.
+  - grid-area: row-start / column-start / row-end / column-end; — Defines a grid item’s position and size.
+
+"Example:"
+
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</div>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 100vh;
+}
+
+.grid-item {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
+
+* "When to Use Flexbox vs. Grid"
+
+- "Flexbox": Best for one-dimensional layouts (either a row or a column). Ideal for simpler layouts where you need to align items and distribute space along a single axis.
+
+- "Grid": Best for two-dimensional layouts (rows and columns). Ideal for complex layouts with multiple rows and columns where you need precise control over the placement of items.
+
+Both Flexbox and Grid can be used together in a single layout for the best results.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+* CSS Masking
+>> CSS masking allows you to control the visibility of an element by using an image or gradient as a mask. 
+This can create complex visual effects without modifying the HTML structure.
+
+* Here are the primary properties used for masking:
+
+	- mask-image: Specifies an image to use as a mask.
+	- mask-size: Specifies the size of the mask image.
+	- mask-position: Specifies the position of the mask image.
+	- mask-repeat: Specifies if/how the mask image will be repeated.
+	- mask-origin: Specifies the origin position (border-box, padding-box, or content-box).
+	- mask-clip: Clipping region of the mask image.
+
+Image Masking:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking Example</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 50px;
+        }
+        .masked-element {
+            width: 1000px;
+            height: 1000px;
+            background-image: url("https://images.pexels.com/photos/1456291/pexels-photo-1456291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            mask-image: url("dragon.png");
+            mask-size: cover;
+            mask-repeat: no-repeat;
+
+        }
+        .masked-element2 {
+            width: 1000px;
+            height: 1000px;
+            background-image: url("image2.jpg");
+            mask-image: url("dragon.png");
+            mask-size: cover;
+            mask-repeat: no-repeat;
+            transform: scaleX(-1);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="masked-element"></div>
+        <div class="masked-element2"></div>
+    </div>
+</body>
+</html>
+
+Gradient Masking:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Masking Example</title>
+    <style>
+        .masked-element {
+            width: 600px;
+            height: 300px;
+            background-image: url('image2.jpg');
+            mask-image: linear-gradient(to right, transparent, black);
+        }
+    </style>
+</head>
+<body>
+    <div class="masked-element"></div>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+* CSS transitions
+
+CSS transitions allow you to change property values smoothly (over a given duration) rather than instantly, providing a way to create simple animations and improve the user experience.
+
+>> Basic Transition Properties
+
+1. "transition-property": Specifies the name of the CSS property to which the transition is applied.
+2. "transition-duration": Specifies the duration over which the transition occurs.
+3. "transition-timing-function": Specifies the speed curve of the transition (e.g., ease, linear, ease-in, ease-out, ease-in-out).
+4. "transition-delay": Specifies the delay before the transition starts.
+
+>> Example 1: Simple Transition on Hover
+
+Let's create a basic example where an element changes its background color when hovered over, with a smooth transition.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transitions Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: background-color 0.5s ease;
+    }
+    .box:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+>> Example 2: Multiple Properties Transition
+
+You can also transition multiple properties simultaneously.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Properties Transition Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transform: rotate(0deg);
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+    .box:hover {
+      background-color: red;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+>> Example 3: Using "transition-timing-function"
+
+Different timing functions can create various transition effects. The default is "ease", but other options include "linear", "ease-in", "ease-out", and "ease-in-out".
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Timing Function Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: transform 0.5s ease-in-out;
+    }
+    .box:hover {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+>> Example 4: Delaying Transitions
+
+You can delay the start of the transition using "transition-delay".
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Delay Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: transform 0.5s ease, background-color 0.5s ease 0.5s;
+    }
+    .box:hover {
+      background-color: red;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+>> Explanation:
+
+1. Example 1: Simple Transition on Hover
+   - The "transition" property is used to specify the transition for the "background-color".
+   - When the ".box" element is hovered over, the background color smoothly changes from blue to red over 0.5 seconds.
+
+2. Example 2: Multiple Properties Transition
+   - Transitions are applied to both "background-color" and "transform".
+   - When the ".box" element is hovered over, it changes color and rotates smoothly.
+
+3. Example 3: Using "transition-timing-function"
+   - The "ease-in-out" timing function creates a smooth start and end for the transition.
+   - When the ".box" element is hovered over, it scales up smoothly.
+
+4. Example 4: Delaying Transitions
+   - The transition for "background-color" has a delay of 0.5 seconds.
+   - When the ".box" element is hovered over, the rotation starts immediately, but the color change is delayed by 0.5 seconds.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+* Web Fonts
+
+Web fonts allow you to use fonts that are not installed on the user's device. Google Fonts is a popular service that provides free fonts that can be easily integrated into your website.
+
+* Using Google Fonts
+
+1. Select a Font from Google Fonts:
+   - Go to [Google Fonts](https://fonts.google.com/)
+   - Select the font you want to use. For example, let's use "Roboto".
+
+2. Embed the Font in Your HTML:
+   - Copy the "<link>" tag provided by Google Fonts and paste it inside the "<head>" of your HTML document.
+
+   
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Web Font Example</title>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <style>
+       body {
+         font-family: 'Roboto', sans-serif;
+       }
+     </style>
+   </head>
+   <body>
+     <h1>Web Fonts with Google Fonts</h1>
+     <p>This is an example of using the Roboto font from Google Fonts.</p>
+   </body>
+   </html>
+
+--------------------------------------------------------------------------------------------------------------------------------------   
+
+* CSS Keyframes Animations
+
+Keyframes animations allow you to create animations by defining styles at various points (keyframes) during the animation sequence.
+
+* Creating a Simple Animation
+
+1. Define the Keyframes:
+   - Use the "@keyframes" rule to define the animation.
+
+2. Apply the Animation to an Element:
+   - Use the "animation" property to apply the animation.
+
+Example:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes Animation Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      animation: moveBox 4s infinite;
+    }
+    @keyframes moveBox {
+      0% {
+        transform: translateX(0);
+        background-color: #3498db;
+      }
+      50% {
+        transform: translateX(300px);
+        background-color: #2ecc71;
+      }
+      100% {
+        transform: translateX(0);
+        background-color: #3498db;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+* Explanation:
+
+1. Web Fonts:
+   - The "<link>" tag in the "<head>" imports the "Roboto" font from Google Fonts.
+   - The "font-family" property in the "body" selector applies the "Roboto" font to the entire document.
+
+2. Keyframes Animation:
+   - The "@keyframes" rule defines an animation named "moveBox" with three keyframes: "0%", "50%", and "100%".
+   - The "animation" property in the ".box" class applies the "moveBox" animation to the element. It runs for 4 seconds ("4s") and repeats infinitely ("infinite").
+   - The "transform" property is used to move the element horizontally, and the "background-color" property changes the color during the animation.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+* Installing Node.js on Windows involves a few steps:
+
+* Step 1: Download Node.js Installer
+
+1. Visit the Node.js Website:
+   - Go to the [Node.js official website](https://nodejs.org/).
+
+2. Choose the Installer:
+   - You will see two versions available for download: LTS (Long Term Support) and the Current version. The LTS version is recommended for most users.
+   - Click on the appropriate installer for Windows (usually it will be a ".msi" file).
+
+* Step 2: Run the Node.js Installer
+
+1. Open the Installer:
+   - Once the download is complete, run the installer by double-clicking the downloaded ".msi" file.
+
+2. Follow the Setup Wizard:
+   - The Node.js Setup Wizard will guide you through the installation steps.
+
+3. Accept the License Agreement:
+   - Read the license agreement and click "Next" if you accept the terms.
+
+4. Choose Installation Location:
+   - Choose the default installation location or specify a different location, then click "Next."
+
+5. Select Components:
+   - Select the components you want to install. It's recommended to keep the default settings, which include Node.js and npm (Node Package Manager).
+
+6. Install Tools for Native Modules (Optional):
+   - You may see an option to install tools for native modules. If you plan to compile native modules, select this option. Otherwise, you can skip it.
+
+7. Begin Installation:
+   - Click "Install" to begin the installation process.
+
+* Step 3: Verify the Installation
+
+1. Open Command Prompt:
+   - After the installation is complete, open the Command Prompt.
+
+2. Check Node.js Version:
+   - Type "node -v" and press Enter. This command will display the installed version of Node.js.
+
+3. Check npm Version:
+   - Type "npm -v" and press Enter. This command will display the installed version of npm (Node Package Manager).
+
+* Step 4: Update npm (Optional)
+
+1. Update npm:
+   - Although npm is installed with Node.js, you can update it to the latest version using the following command:
+     
+     npm install -g http-server
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+* Font Awesome Icons
+
+* Introduction to Font Awesome
+- "Font Awesome" is a popular icon toolkit used in web development.
+- Provides scalable vector icons that can be customized with CSS.
+- Offers a vast library of icons including social media logos, interface icons, and more.
+
+* Why Use Font Awesome?
+- "Scalable": Icons are vector-based and scale perfectly on different screen sizes.
+- "Customizable": Change size, color, drop shadow, and other CSS properties.
+- "Easy to Use": Simple integration with HTML and CSS.
+- "Cross-browser Compatibility": Works across all modern browsers.
+- "Accessibility": Includes support for screen readers.
+
+* Integrating Font Awesome
+1. "Via CDN":
+   - Include the Font Awesome CDN link in the '<head>' section of your HTML file.
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+
+2. "Via Download":
+   - Download the Font Awesome files and include them in your project.
+   - Add the local CSS file to your HTML.
+   
+   <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+   
+
+* Basic Usage
+- Use the '<i>' or '<span>' tag with the appropriate Font Awesome class to add an icon.
+- Example:
+  
+  <i class="fas fa-coffee"></i>
+  
+  - "fas": Font Awesome Solid.
+  - "fa-coffee": Specific icon class.
+
+* Customizing Icons with CSS
+- "Size": Use built-in size classes or customize with CSS.
+  
+  <i class="fas fa-coffee fa-2x"></i> <!-- Built-in size class -->
+  <i class="fas fa-coffee" style="font-size: 24px;"></i> <!-- Custom size with CSS -->
+  
+
+- "Color": Change the color using the 'color' property in CSS.
+  
+  <i class="fas fa-coffee" style="color: brown;"></i>
+  
+
+- "Additional Styles": Apply any other CSS properties like 'margin', 'padding', 'border', etc.
+  
+  <i class="fas fa-coffee" style="color: brown; margin-right: 10px;"></i>
+  
+
+* Common Classes and Categories
+- "Solid Icons": Use 'fas' prefix (e.g., 'fas fa-home').
+- "Regular Icons": Use 'far' prefix for outlined icons (e.g., 'far fa-heart').
+- "Brand Icons": Use 'fab' prefix for brand logos (e.g., 'fab fa-twitter').
+
+*Examples of Usage
+- "Navigation Menu":
+  
+  <nav>
+      <ul>
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+  </nav>
+  
+
+- "Social Media Links":
+  
+  <div class="social-media">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  
+
+* Accessibility Considerations
+- Use 'aria-hidden="true"' for decorative icons.
+  
+  <i class="fas fa-coffee" aria-hidden="true"></i>
+  
+
+- Include 'aria-label' or visually hidden text for icons used as buttons or links.
+  
+  <button>
+      <i class="fas fa-download" aria-hidden="true"></i>
+      <span class="sr-only">Download</span>
+  </button>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+* Introduction to CSS Positioning
+- CSS Positioning is used to control the layout of elements on a webpage.
+- Key properties: 'position', 'top', 'right', 'bottom', 'left', 'z-index'.
+
+* Types of Positioning
+
+1. Static Positioning
+   - Default positioning for all HTML elements.
+   - Elements are positioned according to the normal flow of the document.
+   - Example:
+     
+     .static-element {
+         position: static;
+     }
+     
+
+2. Relative Positioning
+   - Positioned relative to its normal position.
+   - Use 'top', 'right', 'bottom', 'left' to adjust its position.
+   - Example:
+     
+     .relative-element {
+         position: relative;
+         top: 10px;
+         left: 20px;
+     }
+     
+
+3. Absolute Positioning
+   - Positioned relative to the nearest positioned ancestor (other than 'static').
+   - If no positioned ancestor, it is positioned relative to the initial containing block (usually the '<html>' element).
+   - Example:
+     
+     .absolute-element {
+         position: absolute;
+         top: 10px;
+         left: 20px;
+     }
+     
+
+4. Fixed Positioning
+   - Positioned relative to the viewport, meaning it stays in the same place even if the page is scrolled.
+   - Example:
+     
+     .fixed-element {
+         position: fixed;
+         top: 10px;
+         left: 20px;
+     }
+     
+
+5. Sticky Positioning
+   - Positioned based on the user's scroll position.
+   - Toggles between 'relative' and 'fixed' depending on the scroll position.
+   - Example:
+     
+     .sticky-element {
+         position: sticky;
+         top: 0; /* Sticks to the top when you reach its scroll position */
+     }
+     
+
+* Key Properties
+
+- Top, Right, Bottom, Left: Specifies the offset for positioned elements.
+  
+  .positioned-element {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+  }
+  
+
+- Z-index: Controls the stack order of positioned elements (higher value means it appears on top).
+  
+  .high-z-index {
+      position: absolute;
+      z-index: 10;
+  }
+  .low-z-index {
+      position: absolute;
+      z-index: 5;
+  }
+  
+
+* Examples of Positioning
+
+- Relative and Absolute Positioning:
+  
+  <div class="relative-container">
+      <div class="absolute-element">I am absolutely positioned</div>
+  </div>
+  
+  
+  .relative-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+  }
+  .absolute-element {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: lightcoral;
+      padding: 10px;
+  }
+  
+
+- Fixed Positioning:
+  
+  <div class="fixed-header">I am fixed at the top</div>
+  <div class="content">Scroll down to see the effect</div>
+  
+  
+  .fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: lightblue;
+      padding: 10px;
+  }
+  .content {
+      margin-top: 60px;
+      height: 2000px;
+      background-color: lightgray;
+  }
+  
+
+- Sticky Positioning:
+  
+  <div class="sticky-container">
+      <div class="sticky-element">I am sticky</div>
+      <div class="content">Scroll down to see the effect</div>
+  </div>
+  
+  
+  .sticky-container {
+      height: 2000px;
+      background-color: lightgray;
+  }
+  .sticky-element {
+      position: sticky;
+      top: 0;
+      background-color: lightgreen;
+      padding: 10px;
+  }
+  
+

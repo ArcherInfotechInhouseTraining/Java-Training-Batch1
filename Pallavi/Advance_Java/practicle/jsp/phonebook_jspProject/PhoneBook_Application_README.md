@@ -102,6 +102,19 @@ The application uses a database named `phonebook_db` with the following two tabl
 
 ---
 
+
+## Output Screenshots
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/addContact.png">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/homePage.png">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/login.png">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/register.png">
+
+<img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/viewContact.png">
+
 ## License
 
 This project is open-source and available for modification and enhancement.
