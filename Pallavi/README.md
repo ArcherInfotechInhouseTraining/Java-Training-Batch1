@@ -15,9 +15,10 @@ This repository contains Java training notes and lab programs. It covers essenti
 6. [Object-Oriented Programming](#object-oriented-programming)
 7. [Arrays](#arrays)
 8. [Exception Handling](#exception-handling)
-9. [File I/O](#file-io)
-10. [Wrapper Classes](#wrapper-classes)
-11. [Example Programs](#example-programs)
+9. [Thread](#thread)
+10. [File I/O](#file-io)
+11. [Wrapper Classes](#wrapper-classes)
+12. [Example Programs](#example-programs)
 
 ---
 

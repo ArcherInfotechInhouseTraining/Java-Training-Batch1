@@ -1,0 +1,28 @@
+class DemoThread extends Thread
+{
+	public void run()
+	{
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("Hello: "+i);
+			try
+			{
+				Thread.sleep(600);
+			}
+			catch (Exception e)
+			{
+			}
+		}
+	}
+}
+class MainThread1
+{
+	public static void main(String []args)
+	{
+		DemoThread ob1 = new DemoThread();
+		ob1.start();
+
+		DemoThread ob2 = new DemoThread();
+		ob2.start();
+	}
+}
