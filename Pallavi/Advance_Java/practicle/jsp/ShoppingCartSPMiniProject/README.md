@@ -96,6 +96,7 @@ private static final String PASSWORD = "your_password";
 
 ---
 
+
 ##output
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/ShoppingCartSPMiniProject/output/cart.png">
 
@@ -104,6 +105,7 @@ private static final String PASSWORD = "your_password";
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/ShoppingCartSPMiniProject/output/login.png">
 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/ShoppingCartSPMiniProject/output/order.png">
+
 
 ## Author
 
