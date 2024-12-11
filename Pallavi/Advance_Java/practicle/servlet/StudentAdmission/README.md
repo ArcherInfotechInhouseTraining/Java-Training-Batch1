@@ -127,10 +127,14 @@ project-root/
 
 ### Admin Panel
 
+
+### Admin Panel
+
 ![Admin Panel](path-to-screenshot-admin-panel.png)
 
 ### Document Verification
 ![Document Verification](path-to-screenshot-document-verification.png)
+
 
 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/StudentAdmission/src/main/webapp/output/admin_dashboard.png">

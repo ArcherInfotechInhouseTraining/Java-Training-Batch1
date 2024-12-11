@@ -122,6 +122,7 @@ Contributions are welcome! Feel free to open issues or submit pull requests for 
 
 
 
+
 ##Output 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagementFinal/output/add_newbook.png">
 
@@ -133,6 +134,7 @@ Contributions are welcome! Feel free to open issues or submit pull requests for 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagementFinal/output/bookservlet.png">
 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/servlet/MiniProjectLibraryManagementFinal/output/userLogin.png">
+
 
 
 

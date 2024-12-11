@@ -103,6 +103,7 @@ The application uses a database named `phonebook_db` with the following two tabl
 ---
 
 
+
 ## Output Screenshots
 
 <img src="https://github.com/ArcherInfotechInhouseTraining/Java-Training-Batch1/blob/main/Pallavi/Advance_Java/practicle/jsp/phonebook_jspProject/output/addContact.png">
